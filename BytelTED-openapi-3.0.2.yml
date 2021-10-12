@@ -16,6 +16,30 @@ components:
           type: integer
           enum:
           - 404
+    ByteltedCommunication:
+      type: object
+      properties:
+        byteltedComContenu:
+          description: Contenu
+          type: object
+        byteltedComPrcId__byteltedPrcNom:
+          description: Nom Parcours
+          type: string
+        byteltedComDescription:
+          description: Description
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+        byteltedComNom:
+          description: Nom
+          type: string
+        byteltedComPrcId:
+          description: Parcours
+          type: string
+        byteltedComIdTemplate:
+          description: Identifiant template
+          type: string
     PublicationResult:
       type: object
       properties:
@@ -63,12 +87,18 @@ components:
         byteltedPrcUsrUsrId__usr_first_name:
           description: First name
           type: string
+        byteltedPrcUsrPrcId__byteltedPrcImgId:
+          description: Image Parcours
+          type: string
         byteltedPrcUsrUsrId:
           description: Utilisateur
           type: string
         byteltedPrcUsrUsrId__usr_last_name:
           description: Last name
           type: string
+        byteltedPrcUsrPrcId__byteltedPrcImgId__byteltedImgImage:
+          description: Fichier image
+          type: object
         byteltedPrcUsrUsrId__usr_login:
           description: Login
           type: string
@@ -81,12 +111,19 @@ components:
         row_id:
           description: Unique technical row ID
           type: string
+        byteltedPrcUsrPrcId__byteltedPrcNom:
+          description: Nom du parcours
+          type: string
     ActionResult:
       type: object
       properties:
         result:
           description: Action result
           type: string
+    ArrayOfByteltedCommunication:
+      type: array
+      items:
+        $ref: '#/components/schemas/ByteltedCommunication'
     ArrayOfByteltedUser:
       type: array
       items:
@@ -503,201 +540,6 @@ paths:
         required: false
       tags:
       - session
-  /rest/ByteltedUser/{row_id}:
-    post:
-      summary: Create a new ByteltedUserbusiness object record
-      security:
-      - bearerAuth: []
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ByteltedUser'
-      operationId: obj-bytelteduser-create
-      responses:
-        '200':
-          description: Success in creating a new business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ByteltedUser'
-        '400':
-          description: Bad request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error400'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - ByteltedUser
-    get:
-      summary: Get a ByteltedUser business object record
-      security:
-      - bearerAuth: []
-      operationId: obj-bytelteduser-get
-      responses:
-        '200':
-          description: Success in getting a single business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ByteltedUser'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_documents
-        description: Inline documents?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_thumbnails
-        description: Inline documents' thumbnails?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_objects
-        description: Inline objects?
-        required: false
-      tags:
-      - ByteltedUser
-    delete:
-      summary: Delete a ByteltedUser business object record
-      security:
-      - bearerAuth: []
-      operationId: obj-bytelteduser-delete
-      responses:
-        '200':
-          description: Success in deleting a business object record
-          content:
-            application/json: {}
-        '400':
-          description: Bad request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error400'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - ByteltedUser
-    put:
-      summary: Update a ByteltedUserbusiness object record
-      security:
-      - bearerAuth: []
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ByteltedUser'
-      operationId: obj-bytelteduser-update
-      responses:
-        '200':
-          description: Success in updating a business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ByteltedUser'
-        '400':
-          description: Bad request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error400'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - ByteltedUser
   /logout:
     get:
       summary: Logout (revoke bearer token)
@@ -967,6 +809,24 @@ paths:
       - schema:
           type: string
         in: query
+        name: byteltedPrcUsrPrcId__byteltedPrcNom
+        description: Search filter for Nom du parcours
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedPrcUsrPrcId__byteltedPrcImgId
+        description: Search filter for Image Parcours
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedPrcUsrPrcId__byteltedPrcImgId__byteltedImgImage
+        description: Search filter for Fichier image
+        required: false
+      - schema:
+          type: string
+        in: query
         name: byteltedPrcUsrUsrId
         description: Search filter for Utilisateur
         required: false
@@ -996,6 +856,201 @@ paths:
         required: false
       tags:
       - ByteltedPrcUsr
+  /rest/ByteltedCommunication/{row_id}:
+    post:
+      summary: Create a new ByteltedCommunicationbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ByteltedCommunication'
+      operationId: obj-byteltedcommunication-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByteltedCommunication'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ByteltedCommunication
+    get:
+      summary: Get a ByteltedCommunication business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-byteltedcommunication-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByteltedCommunication'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - ByteltedCommunication
+    delete:
+      summary: Delete a ByteltedCommunication business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-byteltedcommunication-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ByteltedCommunication
+    put:
+      summary: Update a ByteltedCommunicationbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ByteltedCommunication'
+      operationId: obj-byteltedcommunication-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByteltedCommunication'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ByteltedCommunication
   /:
     get:
       summary: Get user session information
@@ -1301,6 +1356,285 @@ paths:
         required: true
       tags:
       - ByteltedParcours
+  /rest/ByteltedUser/{row_id}:
+    post:
+      summary: Create a new ByteltedUserbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ByteltedUser'
+      operationId: obj-bytelteduser-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByteltedUser'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ByteltedUser
+    get:
+      summary: Get a ByteltedUser business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-bytelteduser-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByteltedUser'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - ByteltedUser
+    delete:
+      summary: Delete a ByteltedUser business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-bytelteduser-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ByteltedUser
+    put:
+      summary: Update a ByteltedUserbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ByteltedUser'
+      operationId: obj-bytelteduser-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByteltedUser'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ByteltedUser
+  /rest/ByteltedCommunication:
+    get:
+      summary: Search ByteltedCommunication business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-byteltedcommunication-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfByteltedCommunication'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedComPrcId
+        description: Search filter for Parcours
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedComPrcId__byteltedPrcNom
+        description: Search filter for Nom Parcours
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedComNom
+        description: Search filter for Nom
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedComIdTemplate
+        description: Search filter for Identifiant template
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedComDescription
+        description: Search filter for Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedComContenu
+        description: Search filter for Contenu
+        required: false
+      tags:
+      - ByteltedCommunication
   /rest/ByteltedUser:
     get:
       summary: Search ByteltedUser business object records or get contextualized metadata
@@ -1440,6 +1774,8 @@ info:
   title: BytelTED
   version: '0.1'
 tags:
+- name: ByteltedCommunication
+  description: Communication
 - name: ByteltedImage
   description: Image
 - name: ByteltedParcours

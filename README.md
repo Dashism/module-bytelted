@@ -16,6 +16,22 @@ Bouygues Telecom
 
 Module TED
 
+`ByteltedCommunication` business object definition
+--------------------------------------------------
+
+Communication
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `byteltedComPrcId` link to **`ByteltedParcours`**            | id                                       | yes      | yes       |          | -                                                                                |
+| _Ref. `byteltedComPrcId.byteltedPrcNom`_                     | _char(255)_                              |          |           |          | -                                                                                |
+| `byteltedComNom`                                             | char(255)                                |          | yes       |          | -                                                                                |
+| `byteltedComIdTemplate`                                      | char(100)                                |          | yes       |          | -                                                                                |
+| `byteltedComDescription`                                     | html(1000000)                            |          | yes       |          | -                                                                                |
+| `byteltedComContenu`                                         | document                                 |          | yes       |          | -                                                                                |
+
 `ByteltedParcours` business object definition
 ---------------------------------------------
 
@@ -42,6 +58,9 @@ Parcours
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `byteltedPrcUsrPrcId` link to **`ByteltedParcours`**         | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `byteltedPrcUsrPrcId.byteltedPrcNom`_                  | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `byteltedPrcUsrPrcId.byteltedPrcImgId`_                | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `byteltedPrcImgId.byteltedImgImage`_                   | _image_                                  |          |           |          | _Fichier image_                                                                  |
 | `byteltedPrcUsrUsrId` link to **`ByteltedUser`**             | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `byteltedPrcUsrUsrId.usr_login`_                       | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | _Ref. `byteltedPrcUsrUsrId.usr_last_name`_                   | _char(50)_                               |          |           | yes      | _Last name_                                                                      |
