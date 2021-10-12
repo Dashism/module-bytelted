@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>Module</name>
+	<action>upsert</action>
+	<data>
+		<mdl_name>BytelTED</mdl_name>
+		<mdl_version>0.1</mdl_version>
+		<mdl_prefix>bytelted</mdl_prefix>
+		<mdl_url><![CDATA[{
+	"type": "git",
+	"origin": {
+		"uri": "git@github.com:dazoulay-simplicite/module-bytelted.git"
+	}
+}]]></mdl_url>
+		<mdl_comment><![CDATA[Bouygues Telecom
+----------------
+
+Module TED]]></mdl_comment>
+	</data>
+</object>
+<object>
+	<name>Theme</name>
+	<action>upsert</action>
+	<data>
+		<thm_name>bytelted</thm_name>
+		<thm_logo_id>files/Theme/bytelted/logo.svg</thm_logo_id>
+		<thm_logo_invert>0</thm_logo_invert>
+		<thm_logo2_id>files/Theme/bytelted/logo2.png</thm_logo2_id>
+		<thm_favicon_id>files/Theme/bytelted/favicon.png</thm_favicon_id>
+		<thm_color1>#FFFFFF</thm_color1>
+		<thm_color2>#FFFFFF</thm_color2>
+		<thm_text2>#404040</thm_text2>
+		<thm_color3>#FFFFFF</thm_color3>
+		<thm_text3>#404040</thm_text3>
+		<thm_base>light</thm_base>
+		<thm_css_doc>files/Theme/bytelted/bytelted_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/bytelted/addon.less</thm_addon>
+		<thm_searchbox>#F7F7F7</thm_searchbox>
+		<thm_active/>
+		<thm_font>Ubuntu</thm_font>
+		<thm_iconset/>
+		<thm_menu_dom_c>#FFFFFF</thm_menu_dom_c>
+		<thm_menu_dom_t>#404040</thm_menu_dom_t>
+		<thm_menu_dact_c>#F7F7F7</thm_menu_dact_c>
+		<thm_menu_dact_t>#202020</thm_menu_dact_t>
+		<thm_menu_sub_c>#FFFFFF</thm_menu_sub_c>
+		<thm_menu_sub_t>#404040</thm_menu_sub_t>
+		<thm_menu_sact_c>#F7F7F7</thm_menu_sact_c>
+		<thm_menu_sact_t>#202020</thm_menu_sact_t>
+		<thm_menu_sta_c>#FFFFFF</thm_menu_sta_c>
+		<thm_menu_sta_t>#606060</thm_menu_sta_t>
+		<thm_compact>0</thm_compact>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>View</name>
+	<action>upsert</action>
+	<data>
+		<viw_name>BytelTEDAdminHome</viw_name>
+		<viw_ui><![CDATA[<div>
+	<div class="area" data-area="1:="></div>
+	<div class="area" data-area="2"></div>
+</div>]]></viw_ui>
+		<viw_order>1</viw_order>
+		<viw_icon/>
+		<viw_disp_id.dis_code/>
+		<viw_scope/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<viw_theme_id.thm_name>bytelted</viw_theme_id.thm_name>
+		<viw_lang/>
+	</data>
+	<data>
+		<viw_name>BytelTEDUserHome</viw_name>
+		<viw_ui><![CDATA[<div>
+	<div class="area" data-area="1:="></div>
+	<div class="area" data-area="2"></div>
+</div>]]></viw_ui>
+		<viw_order>1</viw_order>
+		<viw_icon/>
+		<viw_disp_id.dis_code/>
+		<viw_scope/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<viw_theme_id.thm_name>bytelted</viw_theme_id.thm_name>
+		<viw_lang/>
+	</data>
+</object>
+<object>
+	<name>User</name>
+	<action>upsert</action>
+	<data>
+		<usr_image_id>files/User/admin.png</usr_image_id>
+		<usr_login>admin</usr_login>
+		<usr_timezone/>
+		<usr_minrows>20</usr_minrows>
+		<usr_maxrows>50</usr_maxrows>
+		<usr_title/>
+		<usr_first_name/>
+		<usr_last_name>Administrateur</usr_last_name>
+		<usr_lang>FRA</usr_lang>
+		<usr_email>demo@simplicite.fr</usr_email>
+		<usr_work_num/>
+		<usr_home_num/>
+		<usr_cell_num/>
+		<usr_active>1</usr_active>
+		<usr_home_id.viw_name>BytelTEDAdminHome</usr_home_id.viw_name>
+		<usr_address1/>
+		<usr_address2/>
+		<usr_zipcode/>
+		<usr_city/>
+		<usr_state/>
+		<usr_country/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<usr_menu>1</usr_menu>
+		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
+		<usr_menu_defdomain_id.obd_name/>
+		<usr_logout>2021-10-11 17:31:13</usr_logout>
+		<usr_last_logon>2021-10-11 17:31:29</usr_last_logon>
+		<usr_dateformat/>
+		<usr_lang_pref>FRA</usr_lang_pref>
+		<usr_uuid/>
+	</data>
+</object>
+<object>
+	<name>UserSysParam</name>
+	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>CLIENT_ID</usp_param_id.sys_code>
+		<usp_value><![CDATA[[{
+ "dt": "2021-10-11 17:31:29",
+ "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+ "id": "RLUJVSzBqaKCudvRAxfBoDjqjrYThytNzDEShMNXNmjSDbeGwWPRlOOcXHUlaoOd1633965304187"
+}]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY BytelTEDAdminHome</usp_param_id.sys_code>
+		<usp_value><![CDATA[[]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Group</name>
+	<action>upsert</action>
+	<data>
+		<grp_name>BYTEL_TED_ADMIN</grp_name>
+		<grp_comment><![CDATA[Administrateur TED]]></grp_comment>
+		<grp_type>G;D;W</grp_type>
+		<grp_parent_id.grp_name/>
+		<grp_home_id.viw_name>BytelTEDAdminHome</grp_home_id.viw_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grp_name>BYTEL_TED_USER</grp_name>
+		<grp_comment><![CDATA[Utilisateur TED]]></grp_comment>
+		<grp_type>G;W</grp_type>
+		<grp_parent_id.grp_name/>
+		<grp_home_id.viw_name>BytelTEDUserHome</grp_home_id.viw_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Profile</name>
+	<action>upsert</action>
+	<data>
+		<prf_profile_id.grp_name>BYTEL_TED_ADMIN</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>SOCIAL_USER</prf_group_id.grp_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>BYTEL_TED_ADMIN</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>USER_PASSWORD</prf_group_id.grp_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>BYTEL_TED_ADMIN</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>WEB_USER</prf_group_id.grp_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>BYTEL_TED_USER</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>SOCIAL_USER</prf_group_id.grp_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>BYTEL_TED_USER</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>USER_PASSWORD</prf_group_id.grp_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>BYTEL_TED_USER</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>WEB_USER</prf_group_id.grp_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Responsability</name>
+	<action>upsert</action>
+	<data>
+		<rsp_login_id.usr_login>designer</rsp_login_id.usr_login>
+		<rsp_group_id.grp_name>BYTEL_TED_ADMIN</rsp_group_id.grp_name>
+		<rsp_start_dt>2021-10-11</rsp_start_dt>
+		<rsp_end_dt/>
+		<rsp_activ>1</rsp_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Field</name>
+	<action>upsert</action>
+	<data>
+		<fld_name>byteltedImgCode</fld_name>
+		<fld_dbname>bytelted_img_code</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>1</fld_required>
+		<fld_fonctid>1</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_tray/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code>ALPHANUM</fld_type_id.flt_code>
+		<fld_list_id.lov_name/>
+		<fld_copy>0</fld_copy>
+		<fld_size>50</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>0</fld_updall>
+		<fld_case>U</fld_case>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fld_name>byteltedImgImage</fld_name>
+		<fld_dbname>bytelted_img_image</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>1</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research/>
+		<fld_researchreq/>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_tray/>
+		<fld_type>20</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>11</fld_size>
+		<fld_minsize/>
+		<fld_precision>100</fld_precision>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Template</name>
+	<action>upsert</action>
+	<data>
+		<tpl_name>BytelTEDImage</tpl_name>
+		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>]]></tpl_ui>
+		<tpl_min/>
+		<tpl_image/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tpl_name>ByteltedUser</tpl_name>
+		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>]]></tpl_ui>
+		<tpl_min/>
+		<tpl_image/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>ObjectFieldArea</name>
+	<action>upsert</action>
+	<data>
+		<ofa_name>ByteltedImage-1</ofa_name>
+		<ofa_position>1</ofa_position>
+		<ofa_title>0</ofa_title>
+		<ofa_ui><![CDATA[<div class="row">
+  <div class="col-sm-4">
+    <div class="field" data-field="byteltedImgCode"></div>
+  </div>
+  <div class="col-sm-8">
+    <div class="field" data-field="byteltedImgImage"></div>
+  </div>
+</div>]]></ofa_ui>
+		<ofa_icon/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<ofa_name>ByteltedUser-1</ofa_name>
+		<ofa_position>1</ofa_position>
+		<ofa_title>0</ofa_title>
+		<ofa_ui><![CDATA[<div>
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="field" data-field="usr_login"></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="field" data-field="usr_last_name"></div>
+        </div>
+        <div class="col-sm-6">
+          <div class="field" data-field="usr_first_name"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="field" data-field="usr_email"></div>
+        </div>
+        <div class="col-sm-6">
+          <div class="field" data-field="usr_cell_num"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="usr_image_id"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="field" data-field="usr_lang"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="usr_active"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="usr_home_id"></div>
+      <div class="field" data-field="usr_home_id__viw_name"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="row_module_id"></div>
+      <div class="field" data-field="row_module_id__mdl_name"></div>
+    </div>
+  </div>
+</div>]]></ofa_ui>
+		<ofa_icon/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Domain</name>
+	<action>upsert</action>
+	<data>
+		<obd_name>ByteltedRef</obd_name>
+		<obd_comment><![CDATA[Données de référence]]></obd_comment>
+		<obd_type>D</obd_type>
+		<obd_view_id.viw_name/>
+		<obd_nohome>1</obd_nohome>
+		<obd_icon>fas/database</obd_icon>
+		<obd_order>1000</obd_order>
+		<obd_domain_id.obd_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>ObjectInternal</name>
+	<action>upsert</action>
+	<data>
+		<obo_name>ByteltedImage</obo_name>
+		<obo_dbtable>bytelted_image</obo_dbtable>
+		<obo_class/>
+		<obo_script_id/>
+		<obo_usets>1</obo_usets>
+		<obo_nosearch>1</obo_nosearch>
+		<obo_comment><![CDATA[Images]]></obo_comment>
+		<obo_type>O</obo_type>
+		<obo_searchspec/>
+		<obo_delspec/>
+		<obo_exportorder>10</obo_exportorder>
+		<obo_distinct>0</obo_distinct>
+		<obo_indexable>0</obo_indexable>
+		<obo_groupby>0</obo_groupby>
+		<obo_dfltref/>
+		<obo_template_id.tpl_name>BytelTEDImage</obo_template_id.tpl_name>
+		<obo_cache>D</obo_cache>
+		<obo_copy>1</obo_copy>
+		<obo_export>1</obo_export>
+		<obo_pagine>1</obo_pagine>
+		<obo_srh_predef>1</obo_srh_predef>
+		<obo_selrow>1</obo_selrow>
+		<obo_updall>1</obo_updall>
+		<obo_delall>1</obo_delall>
+		<obo_listsearch>1</obo_listsearch>
+		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_useform>1</obo_useform>
+		<obo_title/>
+		<obo_icon>fas/image</obo_icon>
+		<obo_refcount>0</obo_refcount>
+		<obo_tree>0</obo_tree>
+		<obo_viewmode>T</obo_viewmode>
+		<obo_historic/>
+		<obo_printable>1</obo_printable>
+		<obo_followlink>1</obo_followlink>
+		<obo_mergeable>0</obo_mergeable>
+		<obo_social>1</obo_social>
+		<obo_rowid_id.fld_name/>
+		<obo_extend_id.obj_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<obo_btn_reload>P</obo_btn_reload>
+		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_del>P</obo_btn_del>
+		<obo_btn_copy>P</obo_btn_copy>
+		<obo_btn_export>P</obo_btn_export>
+		<obo_btn_listadd>1</obo_btn_listadd>
+		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
+		<obo_btn_updall>P</obo_btn_updall>
+		<obo_btn_delall>P</obo_btn_delall>
+		<obo_btn_merge>P</obo_btn_merge>
+		<obo_btn_save>1</obo_btn_save>
+		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
+		<obo_btn_close>1</obo_btn_close>
+		<obo_tray>1</obo_tray>
+		<obo_dashboard>1</obo_dashboard>
+		<obo_prefix>img</obo_prefix>
+		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas/>
+	</data>
+	<data>
+		<obo_name>ByteltedUser</obo_name>
+		<obo_dbtable>m_user</obo_dbtable>
+		<obo_class/>
+		<obo_script_id/>
+		<obo_usets>1</obo_usets>
+		<obo_nosearch>1</obo_nosearch>
+		<obo_comment><![CDATA[Utilisateur]]></obo_comment>
+		<obo_type>O</obo_type>
+		<obo_searchspec><![CDATA[t.usr_login not in ('designer', 'public', 'system', 'admin')]]></obo_searchspec>
+		<obo_delspec/>
+		<obo_exportorder/>
+		<obo_distinct>0</obo_distinct>
+		<obo_indexable>0</obo_indexable>
+		<obo_groupby>0</obo_groupby>
+		<obo_dfltref/>
+		<obo_template_id.tpl_name>ByteltedUser</obo_template_id.tpl_name>
+		<obo_cache>D</obo_cache>
+		<obo_copy>1</obo_copy>
+		<obo_export>1</obo_export>
+		<obo_pagine>1</obo_pagine>
+		<obo_srh_predef>1</obo_srh_predef>
+		<obo_selrow>1</obo_selrow>
+		<obo_updall>1</obo_updall>
+		<obo_delall>1</obo_delall>
+		<obo_listsearch>1</obo_listsearch>
+		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_useform>1</obo_useform>
+		<obo_title/>
+		<obo_icon>fas/user</obo_icon>
+		<obo_refcount>0</obo_refcount>
+		<obo_tree>0</obo_tree>
+		<obo_viewmode>T</obo_viewmode>
+		<obo_historic/>
+		<obo_printable>1</obo_printable>
+		<obo_followlink>1</obo_followlink>
+		<obo_mergeable>0</obo_mergeable>
+		<obo_social>1</obo_social>
+		<obo_rowid_id.fld_name/>
+		<obo_extend_id.obj_name>SimpleUser</obo_extend_id.obj_name>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<obo_btn_reload>P</obo_btn_reload>
+		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_del>P</obo_btn_del>
+		<obo_btn_copy>P</obo_btn_copy>
+		<obo_btn_export>P</obo_btn_export>
+		<obo_btn_listadd>1</obo_btn_listadd>
+		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
+		<obo_btn_updall>P</obo_btn_updall>
+		<obo_btn_delall>P</obo_btn_delall>
+		<obo_btn_merge>P</obo_btn_merge>
+		<obo_btn_save>1</obo_btn_save>
+		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
+		<obo_btn_close>1</obo_btn_close>
+		<obo_tray>1</obo_tray>
+		<obo_dashboard>1</obo_dashboard>
+		<obo_prefix/>
+		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
+		<obo_sortable>1</obo_sortable>
+		<obo_list_areas/>
+	</data>
+</object>
+<object>
+	<name>ObjectFieldSystem</name>
+	<action>upsert</action>
+	<data>
+		<obf_object_id.obo_name>ByteltedImage</obf_object_id.obo_name>
+		<obf_field_id.fld_name>byteltedImgCode</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>10</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order>1</obf_dfault_order>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ByteltedImage-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ByteltedImage</obf_object_id.obo_name>
+		<obf_field_id.fld_name>byteltedImgImage</obf_field_id.fld_name>
+		<obf_field_id.fld_type>20</obf_field_id.fld_type>
+		<obf_order>20</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ByteltedImage-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Function</name>
+	<action>upsert</action>
+	<data>
+		<fct_name>BYTELTED_IMG_CRUD</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ByteltedImage</fct_object_id.obj_name>
+		<fct_function>CMS</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>BYTELTED_IMG_R</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ByteltedImage</fct_object_id.obj_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>BYTELTED_REF_D</fct_name>
+		<fct_object_id.obj_type>D</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ByteltedRef</fct_object_id.obj_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>BYTELTED_USER_CRUD</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ByteltedUser</fct_object_id.obj_name>
+		<fct_function>CMS</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>BYTELTED_USER_R</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ByteltedUser</fct_object_id.obj_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Grant</name>
+	<action>upsert</action>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED_IMG_CRUD</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedImage</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>CMS</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED_REF_D</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>D</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedRef</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED_USER_CRUD</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedUser</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>CMS</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED_IMG_R</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedImage</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED_REF_D</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>D</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedRef</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED_USER_R</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedUser</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Map</name>
+	<action>upsert</action>
+	<data>
+		<map_domain_id.obd_name>ByteltedRef</map_domain_id.obd_name>
+		<map_object_id.obj_name>ByteltedImage</map_object_id.obj_name>
+		<map_process_id.pcs_name/>
+		<map_order>1010</map_order>
+		<map_ext>0</map_ext>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<map_domain_id.obd_name>ByteltedRef</map_domain_id.obd_name>
+		<map_object_id.obj_name>ByteltedUser</map_object_id.obj_name>
+		<map_process_id.pcs_name/>
+		<map_order>1020</map_order>
+		<map_ext>0</map_ext>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>ViewItem</name>
+	<action>upsert</action>
+	<data>
+		<vwi_view_id.viw_name>BytelTEDAdminHome</vwi_view_id.viw_name>
+		<vwi_position>1</vwi_position>
+		<vwi_type>U</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>BytelTEDAdminHome</vwi_view_id.viw_name>
+		<vwi_position>2</vwi_position>
+		<vwi_type>N</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>BytelTEDUserHome</vwi_view_id.viw_name>
+		<vwi_position>1</vwi_position>
+		<vwi_type>U</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>BytelTEDUserHome</vwi_view_id.viw_name>
+		<vwi_position>2</vwi_position>
+		<vwi_type>N</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>ViewGroup</name>
+	<action>upsert</action>
+	<data>
+		<vig_view_id.viw_name>BytelTEDAdminHome</vig_view_id.viw_name>
+		<vig_group_id.grp_name>BYTEL_TED_ADMIN</vig_group_id.grp_name>
+		<vig_group_id.grp_comment><![CDATA[Administrateur TED]]></vig_group_id.grp_comment>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vig_view_id.viw_name>BytelTEDUserHome</vig_view_id.viw_name>
+		<vig_group_id.grp_name>BYTEL_TED_USER</vig_group_id.grp_name>
+		<vig_group_id.grp_comment><![CDATA[Utilisateur TED]]></vig_group_id.grp_comment>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>DispSysParam</name>
+	<action>upsert</action>
+	<data>
+		<dsp_disp_id.dis_code>default</dsp_disp_id.dis_code>
+		<dsp_param_id.sys_code>WINDOW_TITLE</dsp_param_id.sys_code>
+		<dsp_value><![CDATA[Bouygues Telecom]]></dsp_value>
+		<dsp_param_id.sys_value><![CDATA[Simplicité®]]></dsp_param_id.sys_value>
+		<dsp_param_id.sys_desc><![CDATA[Webapp title]]></dsp_param_id.sys_desc>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Script</name>
+	<action>upsert</action>
+	<data>
+		<scr_code>ByteltedCommun</scr_code>
+		<scr_file>src/com/simplicite/commons/BytelTED/ByteltedCommun.java</scr_file>
+		<scr_type>JSR</scr_type>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateField</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>byteltedImgCode</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>bytelted img code</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>byteltedImgImage</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>bytelted img image</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>byteltedImgCode</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Code</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>byteltedImgImage</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Image</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+</object>
+<object>
+	<name>TranslateFieldArea</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ByteltedImage-1</tsl_id.ofa_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>BytelTEDImage-1</tsl_value>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ByteltedUser-1</tsl_id.ofa_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>ByteltedUser-1</tsl_value>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ByteltedImage-1</tsl_id.ofa_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Image</tsl_value>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ByteltedUser-1</tsl_id.ofa_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Utilisateur</tsl_value>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateDomain</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>ByteltedRef</tsl_id.obd_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Reference data</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>ByteltedRef</tsl_id.obd_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Données de référence</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateObject</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>ByteltedImage</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Image|Images</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>ByteltedUser</tsl_id.obo_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>User|Users</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>ByteltedImage</tsl_id.obo_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Image|Images</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obo_name>ByteltedUser</tsl_id.obo_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Utilisateur|Utilisateurs</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateView</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeView>V</tsl_typeView>
+		<tsl_id.viw_name>BytelTEDAdminHome</tsl_id.viw_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>TED administrator</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeView>V</tsl_typeView>
+		<tsl_id.viw_name>BytelTEDUserHome</tsl_id.viw_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>TED user</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeView>V</tsl_typeView>
+		<tsl_id.viw_name>BytelTEDAdminHome</tsl_id.viw_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Administrateur TED</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeView>V</tsl_typeView>
+		<tsl_id.viw_name>BytelTEDUserHome</tsl_id.viw_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Utilisateur TED</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+</simplicite>

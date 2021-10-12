@@ -1,0 +1,103 @@
+/*----------------------------------------------------*/
+@bytel-color1: #009DCC; /* Light blue */
+@bytel-color2: #0055A4; /* Dark blue */
+@bytel-color3: #EA5B0F; /* Orange */
+/*----------------------------------------------------*/
+
+@bytel-color: darken(@bytel-color1, 20%);
+@bytel-links: @bytel-color2;
+@bytel-reference: lighten(@bytel-color1, 80%);
+@bytel-icon: darken(@bytel-color3, 10%);
+@bytel-border-color: #D0D0D0;
+@bytel-border: solid 1px @bytel-border-color;
+@bytel-shadow: 4px 4px 6px ligthen(@bytel-border-color, 20%);
+
+.btn {
+	border-radius: 1rem;
+}
+.header .searchbox input, .header .searchbox.focus input, .header .searchbox .btn, .header .searchbox.focus .btn {
+	border: @bytel-border;
+	border-radius: 1rem !important;
+}
+.js-search, .js-search-open {
+	border: none 0 !important;
+	background: none !important;
+	color: @bytel-color !important;
+}
+.panel, .card {
+	border-radius: 1rem;
+	box-shadow: @bytel-shadow;
+	margin: 1rem .5rem;
+}
+.panel-default > .panel-heading, .panel-default > .panel-footer, .card-header, .card-footer {
+	color: @bytel-color;
+	background: none;
+}
+.table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > th, .table tr.totals > td {
+	background: #FFFFFF;
+	color: @bytel-color;
+}
+.page-item.active .page-link {
+	background-color: @bytel-color;
+	border-color: @bytel-color;
+}
+.nav-tabs .nav-link {
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+}
+.control-group > label,
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active,
+.nav-tabs > li > a, .nav-tabs .nav-link {
+	color: @bytel-color;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+	color: @bytel-links;
+	background: none;
+}
+.tabs-left .tab-content {
+	border: solid 1px red;
+}
+.reference > .control-group input,
+.reference > .control-group select,
+.reference > .control-group textarea,
+.reference > .control-group .markdown-html {
+	background: @bytel-reference;
+}
+.list-shortcuts .item {
+	background: #FFFFFF;
+	color: @bytel-color;
+	border: @bytel-border;
+	box-shadow: @bytel-shadow;
+}
+ul.main-menu .badge {
+	background-color: #FFFFDD;
+}
+a, a:hover, a:active,
+.page-link, .page-link:hover, .page-link:active {
+	color: @bytel-links;
+}
+ul.main-menu > li a:hover, ul.main-menu > li.active > a {
+	border-radius: 0 1rem 1rem 0;
+}
+ul.sub-menu a.menu-sel::before {
+    background: @bytel-color;
+}
+ul.main-menu > li .icon,
+.icon-title i, .icon-title span,
+.list-shortcuts .item .icon {
+	color: @bytel-icon;
+}
+.control-group > label {
+	font-weight: bold;
+	color: @bytel-color2;
+	text-transform: uppercase;
+}
+.ctrow {
+	border-bottom: dotted 1px @bytel-border-color !important;
+	border-top: none 0 !important;
+	border-right: none 0 !important;
+	border-left: none 0 !important;
+}
+.ctcell {
+	border: dotted 1px @bytel-border-color !important;
+}
