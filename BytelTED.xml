@@ -318,7 +318,7 @@ Module TED]]></mdl_comment>
 		<fld_listsum/>
 		<fld_tray/>
 		<fld_type>3</fld_type>
-		<fld_type_id.flt_code/>
+		<fld_type_id.flt_code>ALPHANUM</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -330,7 +330,7 @@ Module TED]]></mdl_comment>
 		<fld_autocomp>0</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
-		<fld_case/>
+		<fld_case>U</fld_case>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
 		<fld_speech/>
@@ -788,10 +788,11 @@ Module TED]]></mdl_comment>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_ui><![CDATA[<div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-4">
     <div class="field" data-field="byteltedComContenu"></div>
+    <div class="action" data-action="byteltedCommunicationPrevisu"></div>
   </div>
-  <div class="col-sm-6"></div>
+  <div class="col-sm-8"></div>
 </div>]]></ofa_ui>
 		<ofa_icon>fas/eye</ofa_icon>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
@@ -2075,6 +2076,25 @@ Module TED]]></mdl_comment>
 	<name>Action</name>
 	<action>upsert</action>
 	<data>
+		<act_name>byteltedCommunicationPrevisu</act_name>
+		<act_type>F</act_type>
+		<act_async>0</act_async>
+		<act_job_depth/>
+		<act_method/>
+		<act_script/>
+		<act_url><![CDATA[javascript:ByteltedCommunication.previsu();]]></act_url>
+		<act_image>fas/eye</act_image>
+		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
+		<act_confirm_ui/>
+		<act_plus>0</act_plus>
+		<act_comment/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<act_exec>FRT</act_exec>
+		<act_count/>
+		<act_order/>
+	</data>
+	<data>
 		<act_name>byteltedParcoursExportSVG</act_name>
 		<act_type>F</act_type>
 		<act_async>0</act_async>
@@ -2097,6 +2117,15 @@ Module TED]]></mdl_comment>
 <object>
 	<name>Function</name>
 	<action>upsert</action>
+	<data>
+		<fct_name>BYTELTED-COM-PREVISU</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ByteltedCommunication</fct_object_id.obj_name>
+		<fct_function>A</fct_function>
+		<fct_action_id.act_name>byteltedCommunicationPrevisu</fct_action_id.act_name>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
 	<data>
 		<fct_name>BYTELTED_APP_D</fct_name>
 		<fct_object_id.obj_type>D</fct_object_id.obj_type>
@@ -2240,6 +2269,16 @@ Module TED]]></mdl_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED-COM-PREVISU</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedCommunication</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name>byteltedCommunicationPrevisu</grt_function_id.fct_action_id.act_name>
+		<grt_function_id.fct_function>A</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_COM_CRUD</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedCommunication</grt_function_id.fct_object_id.obj_name>
@@ -2325,6 +2364,16 @@ Module TED]]></mdl_comment>
 		<grt_function_id.fct_object_id.obj_name>ByteltedBpmnEditor</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED-COM-PREVISU</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ByteltedCommunication</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name>byteltedCommunicationPrevisu</grt_function_id.fct_action_id.act_name>
+		<grt_function_id.fct_function>A</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -2640,6 +2689,42 @@ Module TED]]></mdl_comment>
 		<res_image/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ByteltedCommunication</obo_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>CSS</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>STYLES</res_code>
+		<res_cached>0</res_cached>
+		<res_file>resources/ObjectInternal/ByteltedCommunication/STYLES.less</res_file>
+		<res_file_compiled>resources/ObjectInternal/ByteltedCommunication/STYLES.min.css</res_file_compiled>
+		<res_image/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ByteltedCommunication</obo_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>JS</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>SCRIPT</res_code>
+		<res_cached>0</res_cached>
+		<res_file>resources/ObjectInternal/ByteltedCommunication/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectInternal/ByteltedCommunication/SCRIPT.min.js</res_file_compiled>
+		<res_image/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>Script</name>
@@ -2654,6 +2739,14 @@ Module TED]]></mdl_comment>
 <object>
 	<name>TranslateAction</name>
 	<action>upsert</action>
+	<data>
+		<tsl_typeAction>A</tsl_typeAction>
+		<tsl_id.act_name>byteltedCommunicationPrevisu</tsl_id.act_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Prévisualisation</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
 	<data>
 		<tsl_typeAction>A</tsl_typeAction>
 		<tsl_id.act_name>byteltedParcoursExportSVG</tsl_id.act_name>

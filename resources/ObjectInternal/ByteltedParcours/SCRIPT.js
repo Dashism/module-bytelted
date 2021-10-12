@@ -37,8 +37,8 @@
 
 const ByteltedParcours = (function(ui) {
 	function exportSVG() {
-		alert('ici');
+		ui.warning('Export SVG: Pas encore implémenté...');
 	}
 
 	return { exportSVG: exportSVG };
-})()
+})(window.$ui);
