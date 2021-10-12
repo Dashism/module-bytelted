@@ -20,10 +20,10 @@ components:
       type: object
       properties:
         byteltedComContenu:
-          description: Contenu
+          description: Fichier du contenu de la communication
           type: object
         byteltedComPrcId__byteltedPrcNom:
-          description: Nom Parcours
+          description: Nom du parcours
           type: string
         byteltedComDescription:
           description: Description
@@ -32,10 +32,10 @@ components:
           description: Unique technical row ID
           type: string
         byteltedComNom:
-          description: Nom
+          description: Nom de la communication
           type: string
         byteltedComPrcId:
-          description: Parcours
+          description: Parcours de la communication
           type: string
         byteltedComIdTemplate:
           description: Identifiant template
@@ -53,10 +53,10 @@ components:
       type: object
       properties:
         byteltedPrcNom:
-          description: Nom
+          description: Nom du parcours
           type: string
         byteltedPrcDescription:
-          description: Description
+          description: Description du parcours
           type: string
         byteltedPrcImgId__byteltedImgImage:
           description: Fichier image
@@ -68,10 +68,10 @@ components:
           description: Unique technical row ID
           type: string
         byteltedPrcImgId:
-          description: Image
+          description: Image du parcours
           type: string
         byteltedPrcDiagrammeXML:
-          description: Diagramme XML
+          description: Fichier BPMN du diagramme
           type: object
     ArrayOfByteltedParcours:
       type: array
@@ -88,7 +88,7 @@ components:
           description: First name
           type: string
         byteltedPrcUsrPrcId__byteltedPrcImgId:
-          description: Image Parcours
+          description: Image du parcours
           type: string
         byteltedPrcUsrUsrId:
           description: Utilisateur
@@ -816,7 +816,7 @@ paths:
           type: string
         in: query
         name: byteltedPrcUsrPrcId__byteltedPrcImgId
-        description: Search filter for Image Parcours
+        description: Search filter for Image du parcours
         required: false
       - schema:
           type: string
@@ -1127,19 +1127,19 @@ paths:
           type: string
         in: query
         name: byteltedPrcNom
-        description: Search filter for Nom
+        description: Search filter for Nom du parcours
         required: false
       - schema:
           type: string
         in: query
         name: byteltedPrcDescription
-        description: Search filter for Description
+        description: Search filter for Description du parcours
         required: false
       - schema:
           type: string
         in: query
         name: byteltedPrcImgId
-        description: Search filter for Image
+        description: Search filter for Image du parcours
         required: false
       - schema:
           type: string
@@ -1157,7 +1157,7 @@ paths:
           type: string
         in: query
         name: byteltedPrcDiagrammeXML
-        description: Search filter for Diagramme XML
+        description: Search filter for Fichier BPMN du diagramme
         required: false
       tags:
       - ByteltedParcours
@@ -1601,19 +1601,19 @@ paths:
           type: string
         in: query
         name: byteltedComPrcId
-        description: Search filter for Parcours
+        description: Search filter for Parcours de la communication
         required: false
       - schema:
           type: string
         in: query
         name: byteltedComPrcId__byteltedPrcNom
-        description: Search filter for Nom Parcours
+        description: Search filter for Nom du parcours
         required: false
       - schema:
           type: string
         in: query
         name: byteltedComNom
-        description: Search filter for Nom
+        description: Search filter for Nom de la communication
         required: false
       - schema:
           type: string
@@ -1631,7 +1631,7 @@ paths:
           type: string
         in: query
         name: byteltedComContenu
-        description: Search filter for Contenu
+        description: Search filter for Fichier du contenu de la communication
         required: false
       tags:
       - ByteltedCommunication
@@ -1774,13 +1774,13 @@ info:
   title: BytelTED
   version: '0.1'
 tags:
-- name: ByteltedCommunication
-  description: Communication
 - name: ByteltedImage
   description: Image
+- name: ByteltedUser
+  description: Utilisateur
 - name: ByteltedParcours
   description: Parcours
 - name: ByteltedPrcUsr
   description: Responsable
-- name: ByteltedUser
-  description: Utilisateur
+- name: ByteltedCommunication
+  description: Communication

@@ -262,7 +262,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Fichier du contenu de la communication]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -299,7 +299,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Description]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -336,7 +336,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Identifiant template]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -373,7 +373,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Nom de la communication]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -410,7 +410,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Parcours de la communication]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -521,7 +521,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Description du parcours]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -558,7 +558,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Fichier BPMN du diagramme]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -595,7 +595,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Image du parcours]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -632,7 +632,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Nom du parcours]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -669,7 +669,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Parcours]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -706,7 +706,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Utilisateur]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -959,7 +959,7 @@ Module TED]]></mdl_comment>
 		<obe_name>ByteltedBpmnEditor</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment/>
+		<obe_comment><![CDATA[Editeur BPMN]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/BytelTED/ByteltedBpmnEditor.java</obe_script_id>
@@ -977,11 +977,11 @@ Module TED]]></mdl_comment>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>1</obo_nosearch>
-		<obo_comment><![CDATA[Communication]]></obo_comment>
+		<obo_comment><![CDATA[Communications]]></obo_comment>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>50</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -1113,7 +1113,7 @@ Module TED]]></mdl_comment>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>30</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -1175,11 +1175,11 @@ Module TED]]></mdl_comment>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>1</obo_nosearch>
-		<obo_comment/>
+		<obo_comment><![CDATA[Responsable parcours]]></obo_comment>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>40</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -1241,11 +1241,11 @@ Module TED]]></mdl_comment>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>1</obo_nosearch>
-		<obo_comment><![CDATA[Utilisateur]]></obo_comment>
+		<obo_comment><![CDATA[Utilisateurs]]></obo_comment>
 		<obo_type>O</obo_type>
 		<obo_searchspec><![CDATA[t.usr_login not in ('designer', 'public', 'system', 'admin')]]></obo_searchspec>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>20</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -3411,6 +3411,16 @@ Module TED]]></mdl_comment>
 		<tsl_value>Utilisateur TED</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<dt_name>BytelTED-data</dt_name>
+		<dt_file>data/BytelTED-data.zip</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2021-10-13 00:11:06]]></dt_desc>
 	</data>
 </object>
 </simplicite>
