@@ -2082,7 +2082,7 @@ Module TED]]></mdl_comment>
 		<act_job_depth/>
 		<act_method/>
 		<act_script/>
-		<act_url><![CDATA[javascript:ByteltedCommunication.previsu();]]></act_url>
+		<act_url><![CDATA[javascript:ByteltedCommunication.previsu(obj);]]></act_url>
 		<act_image>fas/eye</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
@@ -2101,7 +2101,7 @@ Module TED]]></mdl_comment>
 		<act_job_depth/>
 		<act_method/>
 		<act_script/>
-		<act_url><![CDATA[javascript:ByteltedParcours.exportSVG();]]></act_url>
+		<act_url><![CDATA[javascript:ByteltedParcours.exportSVG(obj);]]></act_url>
 		<act_image>fas/image</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>

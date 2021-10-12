@@ -36,7 +36,7 @@
 // UI actions
 
 const ByteltedParcours = (function(ui) {
-	function exportSVG() {
+	function exportSVG(obj) {
 		ui.warning('Export SVG: Pas encore implémenté...');
 	}
 
