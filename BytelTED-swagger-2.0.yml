@@ -45,16 +45,178 @@ paths:
         required: false
       - in: query
         name: byteltedImgCode
-        description: Search filter for Code
+        description: Search filter for Code image
         type: string
         required: false
       - in: query
         name: byteltedImgImage
-        description: Search filter for Image
+        description: Search filter for Fichier image
         type: string
         required: false
       tags:
       - ByteltedImage
+  /rest/ByteltedPrcUsr/{row_id}:
+    post:
+      summary: Create a new ByteltedPrcUsrbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedprcusr-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedPrcUsr'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ByteltedPrcUsr'
+        in: body
+        name: body
+      tags:
+      - ByteltedPrcUsr
+      consumes:
+      - application/json
+    get:
+      summary: Get a ByteltedPrcUsr business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedprcusr-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedPrcUsr'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - ByteltedPrcUsr
+    delete:
+      summary: Delete a ByteltedPrcUsr business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedprcusr-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ByteltedPrcUsr
+    put:
+      summary: Update a ByteltedPrcUsrbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedprcusr-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedPrcUsr'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ByteltedPrcUsr'
+        in: body
+        name: body
+      tags:
+      - ByteltedPrcUsr
+      consumes:
+      - application/json
   /login:
     get:
       summary: Login (obtain bearer token)
@@ -424,6 +586,77 @@ paths:
       - ByteltedImage
       consumes:
       - application/json
+  /rest/ByteltedPrcUsr:
+    get:
+      summary: Search ByteltedPrcUsr business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedprcusr-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfByteltedPrcUsr'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: byteltedPrcUsrPrcId
+        description: Search filter for Parcours
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcUsrUsrId
+        description: Search filter for Utilisateur
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcUsrUsrId__usr_login
+        description: Search filter for Login
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcUsrUsrId__usr_last_name
+        description: Search filter for Last name
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcUsrUsrId__usr_first_name
+        description: Search filter for First name
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcUsrUsrId__usr_email
+        description: Search filter for Email address
+        type: string
+        required: false
+      tags:
+      - ByteltedPrcUsr
   /:
     get:
       summary: Get user session information
@@ -447,6 +680,239 @@ paths:
         required: false
       tags:
       - session
+  /rest/ByteltedParcours:
+    get:
+      summary: Search ByteltedParcours business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedparcours-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfByteltedParcours'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: byteltedPrcNom
+        description: Search filter for Nom
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcImgId
+        description: Search filter for Image
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcImgId__byteltedImgCode
+        description: Search filter for Code image
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcImgId__byteltedImgImage
+        description: Search filter for Fichier image
+        type: string
+        required: false
+      - in: query
+        name: byteltedPrcDiagrammeXML
+        description: Search filter for Diagramme XML
+        type: string
+        required: false
+      tags:
+      - ByteltedParcours
+  /rest/ByteltedParcours/{row_id}:
+    post:
+      summary: Create a new ByteltedParcoursbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedparcours-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedParcours'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ByteltedParcours'
+        in: body
+        name: body
+      tags:
+      - ByteltedParcours
+      consumes:
+      - application/json
+    get:
+      summary: Get a ByteltedParcours business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedparcours-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedParcours'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - ByteltedParcours
+    delete:
+      summary: Delete a ByteltedParcours business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedparcours-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ByteltedParcours
+    put:
+      summary: Update a ByteltedParcoursbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedparcours-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedParcours'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ByteltedParcours'
+        in: body
+        name: body
+      tags:
+      - ByteltedParcours
+      consumes:
+      - application/json
   /rest/ByteltedUser:
     get:
       summary: Search ByteltedUser business object records or get contextualized metadata
@@ -574,6 +1040,71 @@ definitions:
         type: integer
         enum:
         - 404
+  PublicationResult:
+    type: object
+    properties:
+      mime:
+        description: MIME type
+        type: string
+      content:
+        description: Content (plain text or base64 encoded)
+        type: string
+  ByteltedParcours:
+    type: object
+    properties:
+      byteltedPrcNom:
+        description: Nom
+        type: string
+      byteltedPrcDescription:
+        description: Description
+        type: string
+      byteltedPrcImgId__byteltedImgImage:
+        description: Fichier image
+        type: object
+      byteltedPrcImgId__byteltedImgCode:
+        description: Code image
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      byteltedPrcImgId:
+        description: Image
+        type: string
+      byteltedPrcDiagrammeXML:
+        description: Diagramme XML
+        type: object
+  ArrayOfByteltedParcours:
+    type: array
+    items:
+      $ref: '#/definitions/ByteltedParcours'
+  ArrayOfByteltedPrcUsr:
+    type: array
+    items:
+      $ref: '#/definitions/ByteltedPrcUsr'
+  ByteltedPrcUsr:
+    type: object
+    properties:
+      byteltedPrcUsrUsrId__usr_first_name:
+        description: First name
+        type: string
+      byteltedPrcUsrUsrId:
+        description: Utilisateur
+        type: string
+      byteltedPrcUsrUsrId__usr_last_name:
+        description: Last name
+        type: string
+      byteltedPrcUsrUsrId__usr_login:
+        description: Login
+        type: string
+      byteltedPrcUsrUsrId__usr_email:
+        description: Email address
+        type: string
+      byteltedPrcUsrPrcId:
+        description: Parcours
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
   ActionResult:
     type: object
     properties:
@@ -590,15 +1121,6 @@ definitions:
       item:
         description: Object item with lists of linked objects' items
         type: object
-  PublicationResult:
-    type: object
-    properties:
-      mime:
-        description: MIME type
-        type: string
-      content:
-        description: Content (plain text or base64 encoded)
-        type: string
   ByteltedUser:
     type: object
     properties:
@@ -686,10 +1208,10 @@ definitions:
     type: object
     properties:
       byteltedImgCode:
-        description: Code
+        description: Code image
         type: string
       byteltedImgImage:
-        description: Image
+        description: Fichier image
         type: object
       row_id:
         description: Unique technical row ID
@@ -724,5 +1246,9 @@ info:
 tags:
 - name: ByteltedImage
   description: Image
+- name: ByteltedParcours
+  description: Parcours
+- name: ByteltedPrcUsr
+  description: Responsable
 - name: ByteltedUser
   description: Utilisateur
