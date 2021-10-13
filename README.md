@@ -16,6 +16,31 @@ Bouygues Telecom
 
 Module TED
 
+`ByteltedCommunicationHistoric` business object definition
+----------------------------------------------------------
+
+Historique des communications
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `row_ref_id` link to **`ByteltedCommunication`**             | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
+| `byteltedComNom`                                             | char(255)                                | yes*     | yes       |          | Nom de la communication                                                          |
+| `byteltedComIdTemplate`                                      | char(100)                                |          | yes       |          | Identifiant template                                                             |
+| `byteltedComStatut`                                          | enum(50) using `BYTELTED_COM_STATUT` list | yes      | yes       |          | Statut de la communication                                                       |
+
+### Lists
+
+* `BYTELTED_COM_STATUT`
+    - `BROUILLON` Brouillon
+    - `A_VALIDER` A valider
+    - `VALIDE` Validé
+    - `ARCHIVE` Archivé
+
 `ByteltedImage` business object definition
 ------------------------------------------
 
@@ -84,7 +109,7 @@ Communications
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `byteltedComPrcId` link to **`ByteltedParcours`**            | id                                       | yes      | yes       |          | Parcours de la communication                                                     |
 | _Ref. `byteltedComPrcId.byteltedPrcNom`_                     | _char(255)_                              |          |           |          | _Nom du parcours_                                                                |
-| `byteltedComNom`                                             | char(255)                                |          | yes       |          | Nom de la communication                                                          |
+| `byteltedComNom`                                             | char(255)                                | yes*     | yes       |          | Nom de la communication                                                          |
 | `byteltedComIdTemplate`                                      | char(100)                                |          | yes       |          | Identifiant template                                                             |
 | `byteltedComDescription`                                     | html(1000000)                            |          | yes       |          | Description                                                                      |
 | `byteltedComContenu`                                         | document                                 |          | yes       |          | Fichier du contenu de la communication                                           |

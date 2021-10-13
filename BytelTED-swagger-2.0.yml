@@ -267,6 +267,168 @@ paths:
           description: Unauthorized
       tags:
       - session
+  /rest/ByteltedCommunicationHistoric/{row_id}:
+    post:
+      summary: Create a new ByteltedCommunicationHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedcommunicationhistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedCommunicationHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ByteltedCommunicationHistoric'
+        in: body
+        name: body
+      tags:
+      - ByteltedCommunicationHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a ByteltedCommunicationHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedcommunicationhistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedCommunicationHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - ByteltedCommunicationHistoric
+    delete:
+      summary: Delete a ByteltedCommunicationHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedcommunicationhistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ByteltedCommunicationHistoric
+    put:
+      summary: Update a ByteltedCommunicationHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedcommunicationhistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ByteltedCommunicationHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ByteltedCommunicationHistoric'
+        in: body
+        name: body
+      tags:
+      - ByteltedCommunicationHistoric
+      consumes:
+      - application/json
   /rest/ByteltedImage/{row_id}:
     post:
       summary: Create a new ByteltedImagebusiness object record
@@ -1105,6 +1267,82 @@ paths:
       - ByteltedUser
       consumes:
       - application/json
+  /rest/ByteltedCommunicationHistoric:
+    get:
+      summary: Search ByteltedCommunicationHistoric business object records or get
+        contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-byteltedcommunicationhistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfByteltedCommunicationHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Record row ID
+        type: string
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for Created by
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Created date
+        type: string
+        required: false
+      - in: query
+        name: byteltedComNom
+        description: Search filter for Nom de la communication
+        type: string
+        required: false
+      - in: query
+        name: byteltedComIdTemplate
+        description: Search filter for Identifiant template
+        type: string
+        required: false
+      - in: query
+        name: byteltedComStatut
+        description: Search filter for Statut de la communication
+        type: string
+        required: false
+        enum:
+        - BROUILLON
+        - A_VALIDER
+        - VALIDE
+        - ARCHIVE
+      tags:
+      - ByteltedCommunicationHistoric
   /rest/ByteltedCommunication:
     get:
       summary: Search ByteltedCommunication business object records or get contextualized
@@ -1148,6 +1386,18 @@ paths:
         name: _indexsearch
         description: Index search query
         type: string
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - ByteltedCommunication-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
         required: false
       - in: query
         name: byteltedComPrcId
@@ -1452,6 +1702,10 @@ definitions:
       item:
         description: Object item with lists of linked objects' items
         type: object
+  ArrayOfByteltedCommunicationHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/ByteltedCommunicationHistoric'
   ByteltedUser:
     type: object
     properties:
@@ -1535,6 +1789,36 @@ definitions:
         type: integer
         enum:
         - 500
+  ByteltedCommunicationHistoric:
+    type: object
+    properties:
+      created_dt_hist:
+        description: Created date
+        type: string
+        example: yyyy-MM-dd HH:mm:ss
+      row_id:
+        description: Unique technical row ID
+        type: string
+      byteltedComNom:
+        description: Nom de la communication
+        type: string
+      created_by_hist:
+        description: Created by
+        type: string
+      byteltedComStatut:
+        description: Statut de la communication
+        type: string
+        enum:
+        - BROUILLON
+        - A_VALIDER
+        - VALIDE
+        - ARCHIVE
+      row_ref_id:
+        description: Record row ID
+        type: string
+      byteltedComIdTemplate:
+        description: Identifiant template
+        type: string
   ByteltedImage:
     type: object
     properties:
@@ -1577,6 +1861,8 @@ info:
 tags:
 - name: ByteltedCommunication
   description: Communication
+- name: ByteltedCommunicationHistoric
+  description: Historique
 - name: ByteltedImage
   description: Image
 - name: ByteltedParcours
