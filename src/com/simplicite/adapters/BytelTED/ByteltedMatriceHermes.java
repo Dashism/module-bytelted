@@ -84,13 +84,13 @@ public class ByteltedMatriceHermes extends com.simplicite.util.integration.Simpl
 			try {
 				JSONObject tmpl = templates.getJSONObject(i);
 				AppLog.info("Recherche des communications utilitant le template \"" + tmpl.getString("template") + "\"", getGrant());
-				for (String[] row : com.getTool().search(new JSONObject("byteltedComIdTemplate", tmpl.getString("template")))) {
+				for (String[] row : com.getTool().search(new JSONObject().put("byteltedComIdTemplate", tmpl.getString("template")))) {
 					com.setValues(row);
 					String m = "Mise à jour de la communication \"" + com.getFieldValue("byteltedComNom") + "\" avec " + tmpl.toString();
 					AppLog.info(m, getGrant());
 					appendLog(m);
 					com.setFieldValue("byteltedComVariables", tmpl.toString(2));
-					//com.getTool().validateAndSave();
+					com.getTool().validateAndSave();
 				}
 			} catch (PlatformException e) {
 				AppLog.error(null, e, getGrant());
