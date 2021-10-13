@@ -141,38 +141,6 @@ Module TED]]></mdl_comment>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_uuid/>
 	</data>
-	<data>
-		<usr_image_id>files/User/dazoulay.jpg</usr_image_id>
-		<usr_login>dazoulay</usr_login>
-		<usr_timezone/>
-		<usr_minrows>20</usr_minrows>
-		<usr_maxrows>50</usr_maxrows>
-		<usr_title>MR</usr_title>
-		<usr_first_name>David</usr_first_name>
-		<usr_last_name>AZOULAY</usr_last_name>
-		<usr_lang>FRA</usr_lang>
-		<usr_email>dazoulay@simplicite.fr</usr_email>
-		<usr_work_num/>
-		<usr_home_num/>
-		<usr_cell_num/>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>Home</usr_home_id.viw_name>
-		<usr_address1/>
-		<usr_address2/>
-		<usr_zipcode/>
-		<usr_city/>
-		<usr_state/>
-		<usr_country/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-		<usr_menu>1</usr_menu>
-		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
-		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2021-10-13 20:39:20</usr_logout>
-		<usr_last_logon>2021-10-13 21:18:31</usr_last_logon>
-		<usr_dateformat/>
-		<usr_lang_pref>FRA</usr_lang_pref>
-		<usr_uuid/>
-	</data>
 </object>
 <object>
 	<name>UserSysParam</name>
@@ -194,62 +162,6 @@ Module TED]]></mdl_comment>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>HISTORY BytelTEDAdminHome</usp_param_id.sys_code>
 		<usp_value><![CDATA[[]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>dazoulay</usp_user_id.usr_login>
-		<usp_param_id.sys_code>CLIENT_ID</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{
- "dt": "2021-10-13 20:39:33",
- "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
- "id": "RLUJVSzBqaKCudvRAxfBoDjqjrYThytNzDEShMNXNmjSDbeGwWPRlOOcXHUlaoOd1633965304187"
-}]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>dazoulay</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY BytelTEDAdminHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{"object":"ByteltedCommunication","rowId":"2","label":"Communication : Communication 1.2"},
-{"object":"ByteltedCommunication","rowId":"1","label":"Communication : Communication 1.1"},
-{"object":"ByteltedParcours","rowId":"1","label":"Parcours : Parcours No 1"},
-{"object":"ByteltedUser","rowId":"7","label":"Utilisateur : Alice MARTIN"},
-{"object":"ByteltedImage","rowId":"1","label":"Image : IMG001"}]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>dazoulay</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY Home</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{"object":"ByteltedCommunication","rowId":"4","label":"Communication : Communication 3.1"},
-{"object":"ByteltedCommunication","rowId":"3","label":"Communication : Communication 2.1"},
-{"object":"ByteltedCommunication","rowId":"2","label":"Communication : Communication 1.2"},
-{"object":"ByteltedCommunication","rowId":"1","label":"Communication : Communication 1.1"}]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>dazoulay</usp_user_id.usr_login>
-		<usp_param_id.sys_code>SCOPE_PREFS</usp_param_id.sys_code>
-		<usp_value><![CDATA[Home,BytelTEDAdminHome]]></usp_value>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[Technical, do not change/remove, needed in user's parameters]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>dazoulay</usp_user_id.usr_login>
-		<usp_param_id.sys_code>UI_EDITOR_PREFS</usp_param_id.sys_code>
-		<usp_value><![CDATA[{"explore":[{"module":"BytelTED","id":"39","items":[{"field":"obo_script_id","label":"Objet métier","list":[{"docId":"5041","resources":[{"docId":"5141","id":"278","label":"(CSS) STYLES"},{"docId":"5139","id":"277","label":"(JS) SCRIPT"}],"id":"2007","label":"ByteltedCommunication"},{"docId":"5042","resources":[{"docId":"5063","id":"276","label":"(JS) SCRIPT"}],"id":"2003","label":"ByteltedParcours"}],"open":true,"object":"ObjectInternal"},{"field":"obe_script_id","label":"Objet externe","list":[{"docId":"5045","resources":[{"docId":"4223","id":"272","label":"(CSS) STYLES"},{"docId":"4225","id":"273","label":"(HTML) HTML"},{"docId":"5052","id":"274","label":"(JS) SCRIPT"},{"docId":"5051","id":"279","label":"(XML) BPMN"},{"docId":"4175","id":"275","label":"(XML) BPMN_EXEMPLE_BYTEL"}],"id":"2006","label":"ByteltedBpmnEditor"}],"open":false,"object":"ObjectExternal"},{"field":"scr_file","label":"Code partagé","list":[{"docId":"5028","id":"1","label":"ByteltedCommun"}],"open":false,"object":"Script"},{"field":"res_file","label":"Ressource","list":[{"docId":"4223","id":"272","label":"Objet externe/ByteltedBpmnEditor * STYLES"},{"docId":"4225","id":"273","label":"Objet externe/ByteltedBpmnEditor * HTML"},{"docId":"5052","id":"274","label":"Objet externe/ByteltedBpmnEditor * SCRIPT"},{"docId":"5051","id":"279","label":"Objet externe/ByteltedBpmnEditor * BPMN"},{"docId":"4175","id":"275","label":"Objet externe/ByteltedBpmnEditor * BPMN_EXEMPLE_BYTEL"},{"docId":"5063","id":"276","label":"Objet métier/ByteltedParcours * SCRIPT"},{"docId":"5141","id":"278","label":"Objet métier/ByteltedCommunication * STYLES"},{"docId":"5139","id":"277","label":"Objet métier/ByteltedCommunication * SCRIPT"}],"open":true,"object":"Resource"},{"field":"adp_script_id","label":"Adaptateur","list":[{"docId":"5079","id":"13","label":"ByteltedMatriceHermes"}],"open":false,"object":"Adapter"}],"open":true}],"tabs":[{"field":"res_file","scope":"","type":"js","object":"Resource","rowId":"277"},{"field":"res_file","scope":"","type":"less","object":"Resource","rowId":"278"}],"selected":"Resource_res_file_278"}]]></usp_value>
 		<usp_param_id.sys_type/>
 		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
 		<usp_param_id.sys_desc/>
@@ -3782,24 +3694,6 @@ Module TED]]></mdl_comment>
 		<res_code>BPMN</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/ByteltedBpmnEditor/BPMN.xml</res_file>
-		<res_file_compiled/>
-		<res_image/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ByteltedBpmnEditor</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>XML</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>BPMN_EXEMPLE_BYTEL</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/ByteltedBpmnEditor/BPMN_EXEMPLE_BYTEL.xml</res_file>
 		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
