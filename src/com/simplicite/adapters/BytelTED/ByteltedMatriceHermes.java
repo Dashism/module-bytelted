@@ -16,10 +16,10 @@ import com.simplicite.util.Tool;
 public class ByteltedMatriceHermes extends com.simplicite.util.integration.SimpleSAXParserAdapter {
 	private static final long serialVersionUID = 1L;
 
-	private boolean inToken = false;
-	private JSONArray templates = null;
-	private JSONObject template = null;
-	private JSONArray variables = null;
+	private transient boolean inToken = false;
+	private transient JSONArray templates = null;
+	private transient JSONObject template = null;
+	private transient JSONArray variables = null;
 
 	@Override
 	public void startProcess() throws PlatformException, InterruptedException {

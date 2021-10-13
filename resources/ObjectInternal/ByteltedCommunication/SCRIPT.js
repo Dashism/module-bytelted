@@ -23,8 +23,7 @@ const ByteltedCommunication = (function(ui) {
 		try {
 			const vars = obj.getField('byteltedComVariables').value();
 			if (vars.variables) {
-				for (let i = 0; i < vars.variables.length; i++) {
-					let v = vars.variables[i];
+				for (let v of vars.variables) {
 					$form.append($('<input class="form-control"/>')
 						.val(v.value)
 						.attr('type', v.type)
