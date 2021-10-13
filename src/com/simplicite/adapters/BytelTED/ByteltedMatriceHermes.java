@@ -74,21 +74,27 @@ public class ByteltedMatriceHermes extends com.simplicite.util.integration.Simpl
 	@Override
 	public void endProcess() throws PlatformException, InterruptedException {
 		addTemplate();
-		String t = templates.toString(2);
-		AppLog.info(t, getGrant());
-		appendLog("Resultat du parsing :\n" + t);
+		String m = "Resultat du parsing :\n" + templates.toString(2);
+		AppLog.info(m, getGrant());
+		appendLog(m);
 
-		// Mise
 		ObjectDB com = getGrant().getTmpObject("ByteltedCommunication");
 		for (int i = 0; i < templates.length(); i++) {
 			try {
 				JSONObject tmpl = templates.getJSONObject(i);
-				AppLog.info("Recherche des communications utilitant le template \"" + tmpl.getString("template") + "\"", getGrant());
-				for (String[] row : com.getTool().search(new JSONObject().put("byteltedComIdTemplate", tmpl.getString("template")))) {
+				String t = tmpl.getString("template");
+
+				m = "Recherche des communications utilitant le template \"" + t + "\"";
+				AppLog.info(m, getGrant());
+				appendLog(m);
+
+				for (String[] row : com.getTool().search(new JSONObject().put("byteltedComIdTemplate", t))) {
 					com.setValues(row);
-					String m = "Mise à jour de la communication \"" + com.getFieldValue("byteltedComNom") + "\" avec " + tmpl.toString();
+					
+					m = "Mise à jour de la communication \"" + com.getFieldValue("byteltedComNom") + "\" avec " + tmpl.toString();
 					AppLog.info(m, getGrant());
 					appendLog(m);
+					
 					com.setFieldValue("byteltedComVariables", tmpl.toString(2));
 					com.getTool().validateAndSave();
 				}
