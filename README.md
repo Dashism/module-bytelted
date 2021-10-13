@@ -88,6 +88,16 @@ Communications
 | `byteltedComIdTemplate`                                      | char(100)                                |          | yes       |          | Identifiant template                                                             |
 | `byteltedComDescription`                                     | html(1000000)                            |          | yes       |          | Description                                                                      |
 | `byteltedComContenu`                                         | document                                 |          | yes       |          | Fichier du contenu de la communication                                           |
+| `byteltedComVariables`                                       | text(1000000)                            |          | yes       |          | Variables du contenu                                                             |
+| `byteltedComStatut`                                          | enum(50) using `BYTELTED_COM_STATUT` list | yes      | yes       |          | Statut de la communication                                                       |
+
+### Lists
+
+* `BYTELTED_COM_STATUT`
+    - `BROUILLON` Brouillon
+    - `A_VALIDER` A valider
+    - `VALIDE` Validé
+    - `ARCHIVE` Archivé
 
 `ByteltedBpmnEditor` external object definition
 -----------------------------------------------

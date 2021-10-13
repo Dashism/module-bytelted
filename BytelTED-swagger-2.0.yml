@@ -44,6 +44,11 @@ paths:
         type: boolean
         required: false
       - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
         name: byteltedImgCode
         description: Search filter for Code image
         type: string
@@ -464,6 +469,11 @@ paths:
         type: boolean
         required: false
       - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
         name: byteltedPrcUsrPrcId
         description: Search filter for Parcours
         type: string
@@ -733,6 +743,11 @@ paths:
         name: _doc
         description: Documentation?
         type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
         required: false
       - in: query
         name: byteltedPrcNom
@@ -1130,6 +1145,11 @@ paths:
         type: boolean
         required: false
       - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
         name: byteltedComPrcId
         description: Search filter for Parcours de la communication
         type: string
@@ -1159,6 +1179,21 @@ paths:
         description: Search filter for Fichier du contenu de la communication
         type: string
         required: false
+      - in: query
+        name: byteltedComVariables
+        description: Search filter for Variables du contenu
+        type: string
+        required: false
+      - in: query
+        name: byteltedComStatut
+        description: Search filter for Statut de la communication
+        type: string
+        required: false
+        enum:
+        - BROUILLON
+        - A_VALIDER
+        - VALIDE
+        - ARCHIVE
       tags:
       - ByteltedCommunication
   /rest/ByteltedUser:
@@ -1291,6 +1326,9 @@ definitions:
   ByteltedCommunication:
     type: object
     properties:
+      byteltedComVariables:
+        description: Variables du contenu
+        type: string
       byteltedComContenu:
         description: Fichier du contenu de la communication
         type: object
@@ -1309,6 +1347,14 @@ definitions:
       byteltedComPrcId:
         description: Parcours de la communication
         type: string
+      byteltedComStatut:
+        description: Statut de la communication
+        type: string
+        enum:
+        - BROUILLON
+        - A_VALIDER
+        - VALIDE
+        - ARCHIVE
       byteltedComIdTemplate:
         description: Identifiant template
         type: string
@@ -1529,13 +1575,13 @@ info:
   title: BytelTED
   version: '0.1'
 tags:
+- name: ByteltedCommunication
+  description: Communication
 - name: ByteltedImage
   description: Image
-- name: ByteltedUser
-  description: Utilisateur
 - name: ByteltedParcours
   description: Parcours
 - name: ByteltedPrcUsr
   description: Responsable
-- name: ByteltedCommunication
-  description: Communication
+- name: ByteltedUser
+  description: Utilisateur

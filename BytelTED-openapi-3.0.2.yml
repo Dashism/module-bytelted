@@ -19,6 +19,9 @@ components:
     ByteltedCommunication:
       type: object
       properties:
+        byteltedComVariables:
+          description: Variables du contenu
+          type: string
         byteltedComContenu:
           description: Fichier du contenu de la communication
           type: object
@@ -37,6 +40,14 @@ components:
         byteltedComPrcId:
           description: Parcours de la communication
           type: string
+        byteltedComStatut:
+          description: Statut de la communication
+          type: string
+          enum:
+          - BROUILLON
+          - A_VALIDER
+          - VALIDE
+          - ARCHIVE
         byteltedComIdTemplate:
           description: Identifiant template
           type: string
@@ -299,6 +310,12 @@ paths:
         in: query
         name: _doc
         description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
         required: false
       - schema:
           type: string
@@ -803,6 +820,12 @@ paths:
       - schema:
           type: string
         in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
         name: byteltedPrcUsrPrcId
         description: Search filter for Parcours
         required: false
@@ -1122,6 +1145,12 @@ paths:
         in: query
         name: _doc
         description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
         required: false
       - schema:
           type: string
@@ -1600,6 +1629,12 @@ paths:
       - schema:
           type: string
         in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
         name: byteltedComPrcId
         description: Search filter for Parcours de la communication
         required: false
@@ -1632,6 +1667,23 @@ paths:
         in: query
         name: byteltedComContenu
         description: Search filter for Fichier du contenu de la communication
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: byteltedComVariables
+        description: Search filter for Variables du contenu
+        required: false
+      - schema:
+          type: string
+          enum:
+          - BROUILLON
+          - A_VALIDER
+          - VALIDE
+          - ARCHIVE
+        in: query
+        name: byteltedComStatut
+        description: Search filter for Statut de la communication
         required: false
       tags:
       - ByteltedCommunication
@@ -1774,13 +1826,13 @@ info:
   title: BytelTED
   version: '0.1'
 tags:
+- name: ByteltedCommunication
+  description: Communication
 - name: ByteltedImage
   description: Image
-- name: ByteltedUser
-  description: Utilisateur
 - name: ByteltedParcours
   description: Parcours
 - name: ByteltedPrcUsr
   description: Responsable
-- name: ByteltedCommunication
-  description: Communication
+- name: ByteltedUser
+  description: Utilisateur
