@@ -28,9 +28,7 @@ public class ByteltedBpmnEditor extends com.simplicite.webapp.web.ResponsiveExte
 				ObjectField doc = o.getField(field);
 				if (!doc.isEmpty())
 					data = new String(doc.getDocument(getGrant()).getBytes(true));
-			}
-			
-			if (Tool.isEmpty(data)) {
+			} else {
 				// Default data from external object resource
 				data = new String(getResourceContent(Resource.TYPE_XML, "BPMN"));
 			}

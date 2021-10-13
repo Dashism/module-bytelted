@@ -7,22 +7,26 @@
 			var app = ui.getAjax();
 			if (p && o.isMainInstance()) {
 				p.form.beforesave = function(ctn, obj, rowId, bscbk) {
-					ByteltedBpmnEditor.saveXML(xml => {
-						let doc = 'byteltedPrcDiagrammeXML';
-						obj.getField(doc).value({
-							object: obj.getName(),
-							rowid: obj.getRowId(),
-							field: doc,
-							id: '0',
-							mime: 'text/xml',
-							name: 'diagram-' + new Date().getTime() + '.xml',
-							content: app.base64Encode(xml)
+					if (obj.getRowId() !== "0") {
+						ByteltedBpmnEditor.saveXML(xml => {
+							let doc = 'byteltedPrcDiagrammeXML';
+							obj.getField(doc).value({
+								object: obj.getName(),
+								rowid: obj.getRowId(),
+								field: doc,
+								id: '0',
+								mime: 'text/xml',
+								name: 'diagram-' + new Date().getTime() + '.xml',
+								content: app.base64Encode(xml)
+							});
+							bscbk && bscbk();
+						}, err => {
+							console.error(err);
+							bscbk && bscbk(false);
 						});
+					} else {
 						bscbk && bscbk();
-					}, err => {
-						console.error(err);
-						bscbk && bscbk(false);
-					});
+					}
 				};
 			}
 		} catch (e) {

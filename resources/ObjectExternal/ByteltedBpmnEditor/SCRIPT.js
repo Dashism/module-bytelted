@@ -6,11 +6,13 @@ const ByteltedBpmnEditor = (function() {
 		const div = $('#bpmn-editor');
 		try {
 			editor = new BpmnJS({ container: div, height: 500 });
-			editor.importXML(data.xml).then(() => {
-				console.log('Diagram imported');
-			}).catch(e => {
-				throw e;
-			});
+			if (data.xml) {
+				editor.importXML(data.xml).then(() => {
+					console.log('Diagram imported');
+				}).catch(e => {
+					throw e;
+				});
+			}
 		} catch (e) {
 			div.text(e.message);
 		}
