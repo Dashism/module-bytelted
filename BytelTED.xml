@@ -11,6 +11,11 @@
 	"type": "git",
 	"origin": {
 		"uri": "git@github.com:dazoulay-simplicite/module-bytelted.git"
+	},
+	"sonar": {
+		"projectKey": "bytel-modules-BytelTED",
+		"organization": "simplicitesoftware",
+		"host.url": "https://sonarcloud.io"
 	}
 }]]></mdl_url>
 		<mdl_comment><![CDATA[Bouygues Telecom

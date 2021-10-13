@@ -17,12 +17,14 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
     <simplicite.version>5.1-SNAPSHOT</simplicite.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
-    <sonar.projectKey>simplicite-modules-BytelTED</sonar.projectKey>
+    <sonar.projectKey>bytel-modules-BytelTED</sonar.projectKey>
     <sonar.projectName>BytelTED</sonar.projectName>
     <sonar.projectVersion>0.1</sonar.projectVersion>
     <sonar.sources>src,resources</sonar.sources>
     <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
+    <sonar.organization>simplicitesoftware</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
   <packaging>jar</packaging>
   <url>${simplicite.url}</url>
