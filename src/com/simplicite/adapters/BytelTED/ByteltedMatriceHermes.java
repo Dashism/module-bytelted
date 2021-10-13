@@ -7,6 +7,7 @@ import org.apache.commons.lang.StringUtils;
 
 import com.simplicite.util.exceptions.PlatformException;
 import com.simplicite.util.AppLog;
+import com.simplicite.util.ObjectDB;
 import com.simplicite.util.Tool;
 
 /**
@@ -44,7 +45,7 @@ public class ByteltedMatriceHermes extends com.simplicite.util.integration.Simpl
 		AppLog.info(qName + " = " + value, getGrant());
 		if ("idTemplate".equals(qName)) {
 			addTemplate();
-			template = new JSONObject().put("name", value);
+			template = new JSONObject().put("template", value);
 			variables = new JSONArray();
 		} else if (inToken && "id".equals(qName)) {
 			if (!Tool.isEmpty(value)) {
@@ -73,8 +74,27 @@ public class ByteltedMatriceHermes extends com.simplicite.util.integration.Simpl
 	@Override
 	public void endProcess() throws PlatformException, InterruptedException {
 		addTemplate();
-		
-		// TODO: mise à jour des variables des communications en matchant sur l'ID template
-		AppLog.info(templates.toString(2), getGrant());
+		String t = templates.toString(2);
+		AppLog.info(t, getGrant());
+		appendLog("Resultat du parsing :\n" + t);
+
+		// Mise
+		ObjectDB com = getGrant().getTmpObject("ByteltedCommunication");
+		for (int i = 0; i < templates.length(); i++) {
+			try {
+				JSONObject tmpl = templates.getJSONObject(i);
+				AppLog.info("Recherche des communications utilitant le template \"" + tmpl.getString("template") + "\"", getGrant());
+				for (String[] row : com.getTool().search(new JSONObject("byteltedComIdTemplate", tmpl.getString("template")))) {
+					com.setValues(row);
+					String m = "Mise à jour de la communication \"" + com.getFieldValue("byteltedComNom") + "\" avec " + tmpl.toString();
+					AppLog.info(m, getGrant());
+					appendLog(m);
+					com.setFieldValue("byteltedComVariables", tmpl.toString(2));
+					//com.getTool().validateAndSave();
+				}
+			} catch (PlatformException e) {
+				AppLog.error(null, e, getGrant());
+			}
+		}
 	}
 }
