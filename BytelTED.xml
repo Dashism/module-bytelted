@@ -62,7 +62,7 @@ Module TED]]></mdl_comment>
 		<viw_ui><![CDATA[<div>
 	<div class="area" data-area="1:="></div>
 	<div class="area" data-area="2"></div>
-</div>]]></viw_ui>
+<div class="area" data-area="3"></div></div>]]></viw_ui>
 		<viw_order>1</viw_order>
 		<viw_icon/>
 		<viw_disp_id.dis_code/>
@@ -76,7 +76,7 @@ Module TED]]></mdl_comment>
 		<viw_ui><![CDATA[<div>
 	<div class="area" data-area="1:="></div>
 	<div class="area" data-area="2"></div>
-</div>]]></viw_ui>
+<div class="area" data-area="3"></div></div>]]></viw_ui>
 		<viw_order>1</viw_order>
 		<viw_icon/>
 		<viw_disp_id.dis_code/>
@@ -135,8 +135,40 @@ Module TED]]></mdl_comment>
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2021-10-11 17:31:13</usr_logout>
-		<usr_last_logon>2021-10-11 17:31:29</usr_last_logon>
+		<usr_logout>2021-10-13 16:28:25</usr_logout>
+		<usr_last_logon>2021-10-13 16:59:02</usr_last_logon>
+		<usr_dateformat/>
+		<usr_lang_pref>FRA</usr_lang_pref>
+		<usr_uuid/>
+	</data>
+	<data>
+		<usr_image_id>files/User/dazoulay.jpg</usr_image_id>
+		<usr_login>dazoulay</usr_login>
+		<usr_timezone/>
+		<usr_minrows>20</usr_minrows>
+		<usr_maxrows>50</usr_maxrows>
+		<usr_title>MR</usr_title>
+		<usr_first_name>David</usr_first_name>
+		<usr_last_name>AZOULAY</usr_last_name>
+		<usr_lang>FRA</usr_lang>
+		<usr_email>dazoulay@simplicite.fr</usr_email>
+		<usr_work_num/>
+		<usr_home_num/>
+		<usr_cell_num/>
+		<usr_active>1</usr_active>
+		<usr_home_id.viw_name>BytelTEDAdminHome</usr_home_id.viw_name>
+		<usr_address1/>
+		<usr_address2/>
+		<usr_zipcode/>
+		<usr_city/>
+		<usr_state/>
+		<usr_country/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+		<usr_menu>1</usr_menu>
+		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
+		<usr_menu_defdomain_id.obd_name/>
+		<usr_logout>2021-10-13 16:28:32</usr_logout>
+		<usr_last_logon>2021-10-13 16:34:17</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_uuid/>
@@ -149,7 +181,7 @@ Module TED]]></mdl_comment>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>CLIENT_ID</usp_param_id.sys_code>
 		<usp_value><![CDATA[[{
- "dt": "2021-10-11 17:31:29",
+ "dt": "2021-10-13 16:59:02",
  "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
  "id": "RLUJVSzBqaKCudvRAxfBoDjqjrYThytNzDEShMNXNmjSDbeGwWPRlOOcXHUlaoOd1633965304187"
 }]]]></usp_value>
@@ -167,12 +199,38 @@ Module TED]]></mdl_comment>
 		<usp_param_id.sys_desc/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
+	<data>
+		<usp_user_id.usr_login>dazoulay</usp_user_id.usr_login>
+		<usp_param_id.sys_code>CLIENT_ID</usp_param_id.sys_code>
+		<usp_value><![CDATA[[{
+ "dt": "2021-10-13 16:30:19",
+ "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+ "id": "RLUJVSzBqaKCudvRAxfBoDjqjrYThytNzDEShMNXNmjSDbeGwWPRlOOcXHUlaoOd1633965304187"
+}]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>dazoulay</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY BytelTEDAdminHome</usp_param_id.sys_code>
+		<usp_value><![CDATA[[{"object":"ByteltedCommunication","rowId":"2","label":"Communication : Communication 1.2"},
+{"object":"ByteltedCommunication","rowId":"1","label":"Communication : Communication 1.1"},
+{"object":"ByteltedParcours","rowId":"1","label":"Parcours : Parcours No 1"},
+{"object":"ByteltedUser","rowId":"7","label":"Utilisateur : Alice MARTIN"},
+{"object":"ByteltedImage","rowId":"1","label":"Image : IMG001"}]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>Group</name>
 	<action>upsert</action>
 	<data>
-		<grp_name>BYTEL_TED_ADMIN</grp_name>
+		<grp_name>BYTELTED_ADMIN</grp_name>
 		<grp_comment><![CDATA[Administrateur TED]]></grp_comment>
 		<grp_type>G;D;W</grp_type>
 		<grp_parent_id.grp_name/>
@@ -180,7 +238,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grp_name>BYTEL_TED_USER</grp_name>
+		<grp_name>BYTELTED_USER</grp_name>
 		<grp_comment><![CDATA[Utilisateur TED]]></grp_comment>
 		<grp_type>G;W</grp_type>
 		<grp_parent_id.grp_name/>
@@ -192,32 +250,32 @@ Module TED]]></mdl_comment>
 	<name>Profile</name>
 	<action>upsert</action>
 	<data>
-		<prf_profile_id.grp_name>BYTEL_TED_ADMIN</prf_profile_id.grp_name>
+		<prf_profile_id.grp_name>BYTELTED_ADMIN</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>SOCIAL_USER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<prf_profile_id.grp_name>BYTEL_TED_ADMIN</prf_profile_id.grp_name>
+		<prf_profile_id.grp_name>BYTELTED_ADMIN</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>USER_PASSWORD</prf_group_id.grp_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<prf_profile_id.grp_name>BYTEL_TED_ADMIN</prf_profile_id.grp_name>
+		<prf_profile_id.grp_name>BYTELTED_ADMIN</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>WEB_USER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<prf_profile_id.grp_name>BYTEL_TED_USER</prf_profile_id.grp_name>
+		<prf_profile_id.grp_name>BYTELTED_USER</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>SOCIAL_USER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<prf_profile_id.grp_name>BYTEL_TED_USER</prf_profile_id.grp_name>
+		<prf_profile_id.grp_name>BYTELTED_USER</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>USER_PASSWORD</prf_group_id.grp_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<prf_profile_id.grp_name>BYTEL_TED_USER</prf_profile_id.grp_name>
+		<prf_profile_id.grp_name>BYTELTED_USER</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>WEB_USER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -227,7 +285,7 @@ Module TED]]></mdl_comment>
 	<action>upsert</action>
 	<data>
 		<rsp_login_id.usr_login>designer</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>BYTEL_TED_ADMIN</rsp_group_id.grp_name>
+		<rsp_group_id.grp_name>BYTELTED_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2021-10-11</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>1</rsp_activ>
@@ -851,7 +909,7 @@ Module TED]]></mdl_comment>
 	</data>
 	<data>
 		<fld_name>byteltedPrcUsrUsrId</fld_name>
-		<fld_dbname>bytelted_prcusr_ursr_id</fld_dbname>
+		<fld_dbname>bytelted_prcusr_usr_id</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
 		<fld_required>1</fld_required>
@@ -906,7 +964,7 @@ Module TED]]></mdl_comment>
 	</data>
 	<data>
 		<tpl_name>ByteltedParcours</tpl_name>
-		<tpl_ui><![CDATA[<div class="area" data-area="1,2,ByteltedCommunication;byteltedComPrcId"></div>]]></tpl_ui>
+		<tpl_ui><![CDATA[<div class="area" data-area="1,2,ByteltedCommunication;byteltedComPrcId,RedoLog;row_metaobject_id"></div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
@@ -1156,7 +1214,7 @@ Module TED]]></mdl_comment>
 		<obo_name>ByteltedCommunication</obo_name>
 		<obo_dbtable>bytelted_communication</obo_dbtable>
 		<obo_class/>
-		<obo_script_id/>
+		<obo_script_id>src/com/simplicite/objects/BytelTED/ByteltedCommunication.java</obo_script_id>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>0</obo_nosearch>
 		<obo_comment><![CDATA[Communications]]></obo_comment>
@@ -1354,7 +1412,7 @@ Module TED]]></mdl_comment>
 		<obo_name>ByteltedParcours</obo_name>
 		<obo_dbtable>bytelted_parcours</obo_dbtable>
 		<obo_class/>
-		<obo_script_id/>
+		<obo_script_id>src/com/simplicite/objects/BytelTED/ByteltedParcours.java</obo_script_id>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>0</obo_nosearch>
 		<obo_comment><![CDATA[Parcours]]></obo_comment>
@@ -2586,7 +2644,7 @@ Module TED]]></mdl_comment>
 		<obf_ref_order/>
 		<obf_object_id.obj_name>ByteltedPrcUsr</obf_object_id.obj_name>
 		<obf_field_id.fld_name>byteltedPrcUsrUsrId</obf_field_id.fld_name>
-		<obf_field_id.fld_dbname>bytelted_prcusr_ursr_id</obf_field_id.fld_dbname>
+		<obf_field_id.fld_dbname>bytelted_prcusr_usr_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
@@ -2816,6 +2874,15 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fct_name>BYTELTED_PRC_USR_R</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ByteltedPrcUsr</fct_object_id.obj_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fct_name>BYTELTED_REF_D</fct_name>
 		<fct_object_id.obj_type>D</fct_object_id.obj_type>
 		<fct_object_id.obj_name>ByteltedRef</fct_object_id.obj_name>
@@ -2847,7 +2914,7 @@ Module TED]]></mdl_comment>
 	<name>Grant</name>
 	<action>upsert</action>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_APP_D</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>D</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedApp</grt_function_id.fct_object_id.obj_name>
@@ -2857,7 +2924,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_BPMN_EDITOR_E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedBpmnEditor</grt_function_id.fct_object_id.obj_name>
@@ -2867,7 +2934,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED-COM-PREVISU</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedCommunication</grt_function_id.fct_object_id.obj_name>
@@ -2877,7 +2944,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_COM_CRUD</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedCommunication</grt_function_id.fct_object_id.obj_name>
@@ -2887,7 +2954,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_COMH_R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedCommunicationHistoric</grt_function_id.fct_object_id.obj_name>
@@ -2897,7 +2964,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_IMG_CRUD</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedImage</grt_function_id.fct_object_id.obj_name>
@@ -2907,7 +2974,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_PRC_CRUD</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedParcours</grt_function_id.fct_object_id.obj_name>
@@ -2917,7 +2984,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_PRC_EXPORTSVG</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedParcours</grt_function_id.fct_object_id.obj_name>
@@ -2927,7 +2994,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_PRC_USR_CRUD</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedPrcUsr</grt_function_id.fct_object_id.obj_name>
@@ -2937,7 +3004,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_REF_D</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>D</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedRef</grt_function_id.fct_object_id.obj_name>
@@ -2947,7 +3014,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_USER_CRUD</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedUser</grt_function_id.fct_object_id.obj_name>
@@ -2957,7 +3024,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_ADMIN</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>RedoLog-R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>RedoLog</grt_function_id.fct_object_id.obj_name>
@@ -2967,7 +3034,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_APP_D</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>D</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedApp</grt_function_id.fct_object_id.obj_name>
@@ -2977,7 +3044,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_BPMN_EDITOR_E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedBpmnEditor</grt_function_id.fct_object_id.obj_name>
@@ -2987,7 +3054,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED-COM-PREVISU</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedCommunication</grt_function_id.fct_object_id.obj_name>
@@ -2997,7 +3064,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_COM_CRU</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedCommunication</grt_function_id.fct_object_id.obj_name>
@@ -3007,7 +3074,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_IMG_R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedImage</grt_function_id.fct_object_id.obj_name>
@@ -3017,7 +3084,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_PRC_CRU</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedParcours</grt_function_id.fct_object_id.obj_name>
@@ -3027,7 +3094,7 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_PRC_EXPORTSVG</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedParcours</grt_function_id.fct_object_id.obj_name>
@@ -3037,17 +3104,17 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
-		<grt_function_id.fct_name>BYTELTED_PRC_USR_CRUD</grt_function_id.fct_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>BYTELTED_PRC_USR_R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedPrcUsr</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
-		<grt_function_id.fct_function>CMS</grt_function_id.fct_function>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_REF_D</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>D</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedRef</grt_function_id.fct_object_id.obj_name>
@@ -3057,13 +3124,77 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
-		<grt_group_id.grp_name>BYTEL_TED_USER</grt_group_id.grp_name>
+		<grt_group_id.grp_name>BYTELTED_USER</grt_group_id.grp_name>
 		<grt_function_id.fct_name>BYTELTED_USER_R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>ByteltedUser</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>BPMAlert</name>
+	<action>upsert</action>
+	<data>
+		<alt_name>BYTELTED-COM-A-VALIDER</alt_name>
+		<alt_media>P</alt_media>
+		<alt_activ>1</alt_activ>
+		<alt_action>M</alt_action>
+		<alt_quantity>1</alt_quantity>
+		<alt_delay/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<alt_name>BYTELTED-COM-VALIDEE</alt_name>
+		<alt_media>P</alt_media>
+		<alt_activ>1</alt_activ>
+		<alt_action>M</alt_action>
+		<alt_quantity>1</alt_quantity>
+		<alt_delay/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>BPMAlertContent</name>
+	<action>upsert</action>
+	<data>
+		<atc_alert_id.alt_name>BYTELTED-COM-A-VALIDER</atc_alert_id.alt_name>
+		<atc_lang>FRA</atc_lang>
+		<atc_subject>Communication à valider</atc_subject>
+		<atc_message><![CDATA[La communication [VALUE:byteltedComNom] a requiert une validation]]></atc_message>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<atc_alert_id.alt_name>BYTELTED-COM-VALIDEE</atc_alert_id.alt_name>
+		<atc_lang>FRA</atc_lang>
+		<atc_subject>Communication validée</atc_subject>
+		<atc_message><![CDATA[La communication [VALUE:byteltedComNom] a été validée]]></atc_message>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>BPMRecipient</name>
+	<action>upsert</action>
+	<data>
+		<atr_order>1</atr_order>
+		<atr_alert_id.alt_name>BYTELTED-COM-A-VALIDER</atr_alert_id.alt_name>
+		<atr_user_id.usr_login/>
+		<atr_group_id.grp_name>BYTELTED_ADMIN</atr_group_id.grp_name>
+		<atr_spam>1</atr_spam>
+		<atr_copy>1</atr_copy>
+		<atr_query/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<atr_order>1</atr_order>
+		<atr_alert_id.alt_name>BYTELTED-COM-VALIDEE</atr_alert_id.alt_name>
+		<atr_user_id.usr_login/>
+		<atr_group_id.grp_name>BYTELTED_ADMIN</atr_group_id.grp_name>
+		<atr_spam>1</atr_spam>
+		<atr_copy>1</atr_copy>
+		<atr_query/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 </object>
@@ -3154,7 +3285,7 @@ Module TED]]></mdl_comment>
 		<stm_callback/>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
-		<stm_notif_id.alt_name/>
+		<stm_notif_id.alt_name>BYTELTED-COM-VALIDEE</stm_notif_id.alt_name>
 		<stm_action_id.act_name>BYTELTED_COM_STATUT-A_VALIDER-VALIDE</stm_action_id.act_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -3182,7 +3313,7 @@ Module TED]]></mdl_comment>
 		<stm_callback/>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
-		<stm_notif_id.alt_name/>
+		<stm_notif_id.alt_name>BYTELTED-COM-A-VALIDER</stm_notif_id.alt_name>
 		<stm_action_id.act_name>BYTELTED_COM_STATUT-BROUILLON-A_VALIDER</stm_action_id.act_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -3220,56 +3351,56 @@ Module TED]]></mdl_comment>
 	<action>upsert</action>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-A_VALIDER-BROUILLON</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_ADMIN</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-A_VALIDER-VALIDE</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_ADMIN</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-ARCHIVE-VALIDE</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_ADMIN</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-BROUILLON-A_VALIDER</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_ADMIN</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-BROUILLON-A_VALIDER</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_USER</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_USER</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-VALIDE-A_VALIDER</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_ADMIN</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-VALIDE-ARCHIVE</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_ADMIN</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>BYTELTED_COM_STATUT-VALIDE-ARCHIVE</stg_transition_id.stm_name>
-		<stg_group_id.grp_name>BYTEL_TED_USER</stg_group_id.grp_name>
+		<stg_group_id.grp_name>BYTELTED_USER</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>ByteltedCommunication</stg_object_id.obo_name>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
@@ -3336,6 +3467,26 @@ Module TED]]></mdl_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+	</data>
+</object>
+<object>
+	<name>Research</name>
+	<action>upsert</action>
+	<data>
+		<rch_object_id.obo_name>ByteltedCommunication</rch_object_id.obo_name>
+		<rch_user_id.usr_login>designer</rch_user_id.usr_login>
+		<rch_name>ByteltedCommunication-AVALIDER</rch_name>
+		<rch_public>0</rch_public>
+		<rch_request><![CDATA[{"byteltedComStatut":"A_VALIDER"}]]></rch_request>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<rch_object_id.obo_name>ByteltedCommunication</rch_object_id.obo_name>
+		<rch_user_id.usr_login>designer</rch_user_id.usr_login>
+		<rch_name>ByteltedCommunication-BROUILLON</rch_name>
+		<rch_public>0</rch_public>
+		<rch_request><![CDATA[{"byteltedComStatut":"BROUILLON"}]]></rch_request>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -3430,6 +3581,24 @@ Module TED]]></mdl_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
+		<vwi_view_id.viw_name>BytelTEDAdminHome</vwi_view_id.viw_name>
+		<vwi_position>3</vwi_position>
+		<vwi_type>S</vwi_type>
+		<vwi_title>1</vwi_title>
+		<vwi_research_id.rch_name>ByteltedCommunication-AVALIDER</vwi_research_id.rch_name>
+		<vwi_research_id.rch_object_id.obo_name>ByteltedCommunication</vwi_research_id.rch_object_id.obo_name>
+		<vwi_research_id.rch_user_id.usr_login>designer</vwi_research_id.rch_user_id.usr_login>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
 		<vwi_view_id.viw_name>BytelTEDUserHome</vwi_view_id.viw_name>
 		<vwi_position>1</vwi_position>
 		<vwi_type>U</vwi_type>
@@ -3465,19 +3634,37 @@ Module TED]]></mdl_comment>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
+	<data>
+		<vwi_view_id.viw_name>BytelTEDUserHome</vwi_view_id.viw_name>
+		<vwi_position>3</vwi_position>
+		<vwi_type>S</vwi_type>
+		<vwi_title>1</vwi_title>
+		<vwi_research_id.rch_name>ByteltedCommunication-BROUILLON</vwi_research_id.rch_name>
+		<vwi_research_id.rch_object_id.obo_name>ByteltedCommunication</vwi_research_id.rch_object_id.obo_name>
+		<vwi_research_id.rch_user_id.usr_login>designer</vwi_research_id.rch_user_id.usr_login>
+		<vwi_search_spec><![CDATA[exists (select 1 from bytelted_prc_usr x where x.bytelted_prcusr_usr_id = [USERID] and t.bytelted_com_prc_id = x.bytelted_prcusr_prc_id)]]></vwi_search_spec>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>ViewGroup</name>
 	<action>upsert</action>
 	<data>
 		<vig_view_id.viw_name>BytelTEDAdminHome</vig_view_id.viw_name>
-		<vig_group_id.grp_name>BYTEL_TED_ADMIN</vig_group_id.grp_name>
+		<vig_group_id.grp_name>BYTELTED_ADMIN</vig_group_id.grp_name>
 		<vig_group_id.grp_comment><![CDATA[Administrateur TED]]></vig_group_id.grp_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
 		<vig_view_id.viw_name>BytelTEDUserHome</vig_view_id.viw_name>
-		<vig_group_id.grp_name>BYTEL_TED_USER</vig_group_id.grp_name>
+		<vig_group_id.grp_name>BYTELTED_USER</vig_group_id.grp_name>
 		<vig_group_id.grp_comment><![CDATA[Utilisateur TED]]></vig_group_id.grp_comment>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
@@ -4084,6 +4271,28 @@ Module TED]]></mdl_comment>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Responsable des parcours</tsl_value>
 		<tsl_simplehelp/>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateResearch</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeResearch>Q</tsl_typeResearch>
+		<tsl_id.rch_name>ByteltedCommunication-AVALIDER</tsl_id.rch_name>
+		<tsl_id.rch_user_id.usr_login>designer</tsl_id.rch_user_id.usr_login>
+		<tsl_id.rch_object_id.obo_name>ByteltedCommunication</tsl_id.rch_object_id.obo_name>
+		<tsl_value>Communications à valider</tsl_value>
+		<tsl_lang>FRA</tsl_lang>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeResearch>Q</tsl_typeResearch>
+		<tsl_id.rch_name>ByteltedCommunication-BROUILLON</tsl_id.rch_name>
+		<tsl_id.rch_user_id.usr_login>designer</tsl_id.rch_user_id.usr_login>
+		<tsl_id.rch_object_id.obo_name>ByteltedCommunication</tsl_id.rch_object_id.obo_name>
+		<tsl_value>Communications brouillon</tsl_value>
+		<tsl_lang>FRA</tsl_lang>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 </object>
