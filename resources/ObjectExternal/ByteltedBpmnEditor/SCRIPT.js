@@ -2,6 +2,12 @@
 const ByteltedBpmnEditor = (ui => {
 	let editor;
 
+	/**
+	 * Affichage de l'éditeur BPMN
+	 * @param {object} [params] Paramètres
+	 * @param {object} [data] Données
+	 * @function
+	 */
 	function render(params, data) {
 		const div = $('#bpmn-editor');
 		try {
@@ -18,6 +24,12 @@ const ByteltedBpmnEditor = (ui => {
 		}
 	}
 
+	/**
+	 * Export en BPMN (XML)
+	 * @param {function} success Callback en cas de succès
+	 * @param {function} failure Callback en cas d'erreur
+	 * @function
+	 */
 	function saveXML(success, failure) {
 		editor.saveXML({ format: true }).then(res => {
 			console.log('Diagram exported as XML');
@@ -27,7 +39,13 @@ const ByteltedBpmnEditor = (ui => {
 		});
 	}
 
-	function saveSVG(success, failure) {
+	/**
+	 * Export en SVG (XML)
+	 * @param {function} success Callback en cas de succès
+	 * @param {function} failure Callback en cas d'erreur
+	 * @function
+	 */
+	 function saveSVG(success, failure) {
 		editor.saveSVG().then(res => {
 			console.log('Diagram exported as SVG');
 			success && success(res.svg);
