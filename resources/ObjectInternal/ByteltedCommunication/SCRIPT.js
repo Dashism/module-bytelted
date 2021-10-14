@@ -22,13 +22,13 @@ const ByteltedCommunication = (ui => {
 
 	/**
 	 * Redimensionnement du container de l'iFrame
-	 * @param {string} width Largeur (0 = pas de largeur explicite)
-	 * @param {string} height Hauteur (0 = pas de hauteur explicite)
+	 * @param {string} [width] Largeur (undefined = pas de largeur explicite)
+	 * @param {string} [height] Hauteur (undefined = pas de hauteur explicite)
 	 * @ignore
 	 */
 	function resize(width, height) {
-		$template.css('width', width === 0 ? '' : width);
-		$template.css('height', height === 0 ? '' : height);
+		$template.css('width', !width ? '' : width);
+		$template.css('height', !height ? '' : height);
 	}
 
 	/**
@@ -62,7 +62,7 @@ const ByteltedCommunication = (ui => {
 							$('<button class="btn btn-primary"/>').append('Tester').click(test)
 						));
 					$vars.append($('<div/>').append(
-						$('<button class="btn btn-secondary"/>').append('Ordinateur').click(() => { resize(0, 0); })
+						$('<button class="btn btn-secondary"/>').append('Ordinateur').click(() => { resize(); })
 					).append(
 						$('<button class="btn btn-secondary"/>').append('Tablette').click(() => { resize('800px', '600px'); })
 					).append(
