@@ -14,6 +14,8 @@
 Bouygues Telecom
 ----------------
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-BytelTED&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-BytelTED)
+
 Module TED
 
 `ByteltedCommunicationHistoric` business object definition
