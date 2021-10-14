@@ -14,20 +14,20 @@
 /**/.DS_Store
 
 # -- Eclipse --
-#/.classpath
-#/.settings
-#/.project
+/.classpath
+/.settings
+/.project
 
 # -- IntelliJ --
-#/.idea
-#/*.iml
+/.idea
+/*.iml
 
 # -- VSCode --
-#/.vscode
+/.vscode
 
 # -- Theia --
-#/.theia
-#/.factorypath
+/.theia
+/.factorypath
 
 # -- GitHub --
-#/.github
+/.github
