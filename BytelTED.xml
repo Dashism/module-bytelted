@@ -675,7 +675,7 @@ Module TED]]></mdl_comment>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Type de la communication]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>

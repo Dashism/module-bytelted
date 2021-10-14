@@ -1411,7 +1411,7 @@ paths:
         required: false
       - in: query
         name: byteltedComType
-        description: Search filter for Type
+        description: Search filter for Type de la communication
         type: string
         required: false
         enum:
@@ -1616,7 +1616,7 @@ definitions:
         - VALIDE
         - ARCHIVE
       byteltedComType:
-        description: Type
+        description: Type de la communication
         type: string
         enum:
         - EMAIL

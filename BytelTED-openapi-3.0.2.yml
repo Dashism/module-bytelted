@@ -49,7 +49,7 @@ components:
           - VALIDE
           - ARCHIVE
         byteltedComType:
-          description: Type
+          description: Type de la communication
           type: string
           enum:
           - EMAIL
@@ -1993,7 +1993,7 @@ paths:
           - AUTRE
         in: query
         name: byteltedComType
-        description: Search filter for Type
+        description: Search filter for Type de la communication
         required: false
       - schema:
           type: string
