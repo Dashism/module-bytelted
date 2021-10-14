@@ -1,13 +1,13 @@
 // Object UI hooks
 
-(function(ui) {
+(ui => {
 	Simplicite.UI.hooks.ByteltedParcours = function(o, cbk) {
 		try {
 			var p = o.locals.ui;
 			var app = ui.getAjax();
 			if (p && o.isMainInstance()) {
 				p.form.beforesave = function(ctn, obj, rowId, bscbk) {
-					if (obj.getRowId() !== "0") {
+					if (obj.getRowId() !== '0') {
 						ByteltedBpmnEditor.saveXML(xml => {
 							let doc = 'byteltedPrcDiagrammeXML';
 							obj.getField(doc).value({
@@ -39,9 +39,21 @@
 
 // UI actions
 
-const ByteltedParcours = (function(ui) {
+const ByteltedParcours = (ui => {
+	const app = ui.getAjax();
+
 	function exportSVG(obj) {
-		ui.warning('Export SVG: Pas encore implémenté...');
+		ByteltedBpmnEditor.saveSVG(svg => {
+			ui.view.tools.dialog({
+				title: 'Diagramme',
+				content: $('<img/>').attr('src', 'data:image/svg+xml;base64,' + app.base64Encode(svg)),
+				width: '80%',
+				buttons: [{ name: 'Fermer', style: 'primary', close: true }]
+			});
+		}, err => {
+			console.error(err);
+			ui.error(err.message);
+		});
 	}
 
 	return { exportSVG: exportSVG };

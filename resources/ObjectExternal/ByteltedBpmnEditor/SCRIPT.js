@@ -1,5 +1,5 @@
 // Editeur BPMN
-const ByteltedBpmnEditor = (function() {
+const ByteltedBpmnEditor = (ui => {
 	let editor;
 
 	function render(params, data) {
@@ -41,4 +41,4 @@ const ByteltedBpmnEditor = (function() {
 		saveXML: saveXML,
 		saveSVG: saveSVG
 	};
-})();
+})(window.$ui);

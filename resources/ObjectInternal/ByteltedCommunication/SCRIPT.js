@@ -1,6 +1,6 @@
 // UI actions
 
-const ByteltedCommunication = (function(ui) {
+const ByteltedCommunication = (ui => {
 	const app = ui.getAjax();
 	let obj;
 	let html;
@@ -38,19 +38,19 @@ const ByteltedCommunication = (function(ui) {
 			if (doc && doc.id) {
 				$.ajax({
 					url: app.documentURL(doc.object, doc.field, doc.rowid, doc.id, 'inline')
-				}).then(function(h) {
+				}).then(h => {
 					html = h;
 					write(html);
 					if (vars.variables)
 						$vars.append($('<div/>').append(
-							$('<button class="btn btn-primary"/>').append("Tester").click(test)
+							$('<button class="btn btn-primary"/>').append('Tester').click(test)
 						));
 					$vars.append($('<div/>').append(
-						$('<button class="btn btn-secondary"/>').append("Ordinateur").click(function() { resize(0, 0); })
+						$('<button class="btn btn-secondary"/>').append('Ordinateur').click(() => { resize(0, 0); })
 					).append(
-						$('<button class="btn btn-secondary"/>').append("Tablette").click(function() { resize('800px', '600px'); })
+						$('<button class="btn btn-secondary"/>').append('Tablette').click(() => { resize('800px', '600px'); })
 					).append(
-						$('<button class="btn btn-secondary"/>').append("Smartphone").click(function() { resize('480px', '640px'); })
+						$('<button class="btn btn-secondary"/>').append('Smartphone').click(() => { resize('480px', '640px'); })
 					));
 				});
 			} else
@@ -62,13 +62,13 @@ const ByteltedCommunication = (function(ui) {
 	}
 
 	function replace(str, data) {
-		return str.replace(/\${(.*?)}/g, function(_, i) { return data[i]; });
+		return str.replace(/\${(.*?)}/g, (_, i) => data[i]);
 	}
 
 	function test() {
 		const fa = $form.serializeArray();
 		var data = {};
-		$.map(fa, function(n) {
+		$.map(fa, n => {
 			data[n['name']] = n['value'];
 		 });
 		write(replace(html, data));
@@ -78,10 +78,10 @@ const ByteltedCommunication = (function(ui) {
 		obj = o;
 
 		$form = $('<form/>').attr('autocomplete', 'off');
-		$vars = $('<div/>').addClass("previsu-vars").html($form);
+		$vars = $('<div/>').addClass('previsu-vars').html($form);
 
 		$content = $('<iframe/>');
-		$template = $('<div/>').addClass("previsu-template").html($content);
+		$template = $('<div/>').addClass('previsu-template').html($content);
 
 		ui.view.tools.dialog({
 			title: 'Prévisualisation',

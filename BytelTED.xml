@@ -1025,10 +1025,10 @@ Module TED]]></mdl_comment>
 		<ofa_ui><![CDATA[<div>
   <div class="extern" data-extern="ByteltedBpmnEditor" data-parameters="{&quot;field&quot;:&quot;byteltedPrcDiagrammeXML&quot;}" data-title="false" style="width: 100%; height: 100%;"></div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-9">
       <div class="field" data-field="byteltedPrcDiagrammeXML"></div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-3">
       <div class="action" data-action="byteltedParcoursExportSVG"></div>
     </div>
   </div>
