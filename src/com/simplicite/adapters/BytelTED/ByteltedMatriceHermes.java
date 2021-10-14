@@ -47,7 +47,7 @@ public class ByteltedMatriceHermes extends com.simplicite.util.integration.Simpl
 			addTemplate();
 			template = new JSONObject().put("template", value);
 			variables = new JSONArray();
-		} else if (inToken && "id".equals(qName)) {
+		} else if (inToken && "id".equals(qName)) { // l'id token correspond au nom de variable
 			if (!Tool.isEmpty(value)) {
 				variables.put(new JSONObject()
 					.put("name", value)
@@ -78,6 +78,7 @@ public class ByteltedMatriceHermes extends com.simplicite.util.integration.Simpl
 		AppLog.info(m, getGrant());
 		appendLog(m);
 
+		// Mise à jour des specs JSON des communications qui metchent les ID template
 		ObjectDB com = getGrant().getTmpObject("ByteltedCommunication");
 		for (int i = 0; i < templates.length(); i++) {
 			try {
