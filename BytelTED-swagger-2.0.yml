@@ -1410,6 +1410,26 @@ paths:
         type: string
         required: false
       - in: query
+        name: byteltedComType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - EMAIL
+        - SMS
+        - COURRIER
+        - AUTRE
+      - in: query
+        name: byteltedComStatut
+        description: Search filter for Statut de la communication
+        type: string
+        required: false
+        enum:
+        - BROUILLON
+        - A_VALIDER
+        - VALIDE
+        - ARCHIVE
+      - in: query
         name: byteltedComNom
         description: Search filter for Nom de la communication
         type: string
@@ -1434,16 +1454,6 @@ paths:
         description: Search filter for Variables du contenu
         type: string
         required: false
-      - in: query
-        name: byteltedComStatut
-        description: Search filter for Statut de la communication
-        type: string
-        required: false
-        enum:
-        - BROUILLON
-        - A_VALIDER
-        - VALIDE
-        - ARCHIVE
       tags:
       - ByteltedCommunication
   /rest/ByteltedUser:
@@ -1605,6 +1615,14 @@ definitions:
         - A_VALIDER
         - VALIDE
         - ARCHIVE
+      byteltedComType:
+        description: Type
+        type: string
+        enum:
+        - EMAIL
+        - SMS
+        - COURRIER
+        - AUTRE
       byteltedComIdTemplate:
         description: Identifiant template
         type: string

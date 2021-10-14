@@ -111,15 +111,21 @@ Communications
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `byteltedComPrcId` link to **`ByteltedParcours`**            | id                                       | yes      | yes       |          | Parcours de la communication                                                     |
 | _Ref. `byteltedComPrcId.byteltedPrcNom`_                     | _char(255)_                              |          |           |          | _Nom du parcours_                                                                |
+| `byteltedComType`                                            | enum(50) using `BYTELTED_COM_TYPE` list  | yes      | yes       |          | -                                                                                |
+| `byteltedComStatut`                                          | enum(50) using `BYTELTED_COM_STATUT` list | yes      | yes       |          | Statut de la communication                                                       |
 | `byteltedComNom`                                             | char(255)                                | yes*     | yes       |          | Nom de la communication                                                          |
 | `byteltedComIdTemplate`                                      | char(100)                                |          | yes       |          | Identifiant template                                                             |
 | `byteltedComDescription`                                     | html(1000000)                            |          | yes       |          | Description                                                                      |
 | `byteltedComContenu`                                         | document                                 |          | yes       |          | Fichier du contenu de la communication                                           |
 | `byteltedComVariables`                                       | text(1000000)                            |          | yes       |          | Variables du contenu                                                             |
-| `byteltedComStatut`                                          | enum(50) using `BYTELTED_COM_STATUT` list | yes      | yes       |          | Statut de la communication                                                       |
 
 ### Lists
 
+* `BYTELTED_COM_TYPE`
+    - `EMAIL` E-mail
+    - `SMS` SMS
+    - `COURRIER` Courrier
+    - `AUTRE` Autre
 * `BYTELTED_COM_STATUT`
     - `BROUILLON` Brouillon
     - `A_VALIDER` A valider

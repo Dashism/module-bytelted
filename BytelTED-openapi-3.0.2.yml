@@ -48,6 +48,14 @@ components:
           - A_VALIDER
           - VALIDE
           - ARCHIVE
+        byteltedComType:
+          description: Type
+          type: string
+          enum:
+          - EMAIL
+          - SMS
+          - COURRIER
+          - AUTRE
         byteltedComIdTemplate:
           description: Identifiant template
           type: string
@@ -1978,6 +1986,28 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - EMAIL
+          - SMS
+          - COURRIER
+          - AUTRE
+        in: query
+        name: byteltedComType
+        description: Search filter for Type
+        required: false
+      - schema:
+          type: string
+          enum:
+          - BROUILLON
+          - A_VALIDER
+          - VALIDE
+          - ARCHIVE
+        in: query
+        name: byteltedComStatut
+        description: Search filter for Statut de la communication
+        required: false
+      - schema:
+          type: string
         in: query
         name: byteltedComNom
         description: Search filter for Nom de la communication
@@ -2005,17 +2035,6 @@ paths:
         in: query
         name: byteltedComVariables
         description: Search filter for Variables du contenu
-        required: false
-      - schema:
-          type: string
-          enum:
-          - BROUILLON
-          - A_VALIDER
-          - VALIDE
-          - ARCHIVE
-        in: query
-        name: byteltedComStatut
-        description: Search filter for Statut de la communication
         required: false
       tags:
       - ByteltedCommunication
