@@ -9,8 +9,8 @@ const ByteltedCommunication = (ui => {
 	let $form, $vars, $content, $template;
 
 	/**
-	 * Ecriture dans l'iFrame de previsu
-	 * @param {string} content Contenu à écrire dans l'Iframe
+	 * Ecriture dans l'iFrame de previsualisation
+	 * @param {string} content Contenu à écrire dans l'iFrame
 	 * @ignore
 	 */
 	function write(content) {
