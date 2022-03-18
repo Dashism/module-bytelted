@@ -3,8 +3,8 @@
 (ui => {
 	Simplicite.UI.hooks.ByteltedParcours = function(o, cbk) {
 		try {
-			var p = o.locals.ui;
-			var app = ui.getAjax();
+			const p = o.locals.ui;
+			const app = ui.getAjax();
 			if (p && o.isMainInstance()) {
 				p.form.beforesave = function(ctn, obj, rowId, bscbk) {
 					if (obj.getRowId() !== '0') {
