@@ -1,9 +1,9 @@
 {
-    "date": "2021-10-20 16:41:42",
+    "date": "2022-03-18 11:47:27",
     "name": "BytelTED",
     "format": "xml",
     "files": ["BytelTED.xml"],
     "repository": {"origin": {"uri": "git@github.com:dazoulay-simplicite/module-bytelted.git"}},
     "version": "0.1",
-    "platform": "5.1.9"
+    "platform": "5.1.34"
 }

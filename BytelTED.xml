@@ -143,56 +143,10 @@ Module TED]]></mdl_comment>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2021-10-13 16:28:25</usr_logout>
-		<usr_last_logon>2021-10-20 15:23:48</usr_last_logon>
+		<usr_last_logon>2022-03-18 10:04:13</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_uuid/>
-	</data>
-</object>
-<object>
-	<name>UserSysParam</name>
-	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>CLIENT_ID</usp_param_id.sys_code>
-		<usp_value><![CDATA[[
- {
-  "dt": "2021-10-15 10:07:32",
-  "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
-  "id": "ElwuYgYpptQtYlcZQrLUVLPHVUAVAnENrNhJLglAwDpAdXiOJyIvbKvhiNSFFJYf1634220581811"
- },
- {
-  "dt": "2021-10-20 15:00:10",
-  "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
-  "id": "RLUJVSzBqaKCudvRAxfBoDjqjrYThytNzDEShMNXNmjSDbeGwWPRlOOcXHUlaoOd1633965304187"
- },
- {
-  "dt": "2021-10-20 15:01:19",
-  "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
-  "id": "nTkxzpwcJrDtwdVeoFhkeoFtQsYKamYuAQCvqQllHICDwgcZuNlDRfkLdZeQwOcw1634734859972"
- }
-]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY BytelTEDAdminHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{"object":"ByteltedParcours","rowId":"5","label":"Parcours : Exemple Bytel"},
-{"object":"ByteltedCommunication","rowId":"1","label":"Communication : Communication 1.1"},
-{"object":"WebNews","rowId":"1","label":"Informations : 14/10/2021 14:44:54 Nouvelle campagne de communication octobre 2021 Français"},
-{"object":"ByteltedCommunication","rowId":"5","label":"Communication : Exemple communicaton Bytel"},
-{"object":"ByteltedParcours","rowId":"1","label":"Parcours : Parcours No 1"},
-{"object":"ByteltedUser","rowId":"7","label":"Utilisateur : Alice MARTIN"},
-{"object":"ByteltedImage","rowId":"1","label":"Image : IMG001"},
-{"object":"ByteltedUser","rowId":"8","label":"Utilisateur : David AZOULAY"},
-{"object":"ByteltedCommunication","rowId":"2","label":"Communication : Communication 1.2"}]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -3887,6 +3841,14 @@ Module TED]]></mdl_comment>
 		<dsp_value><![CDATA["BouyguesTelecom TED" <noreply@simplicite.fr>]]></dsp_value>
 		<dsp_param_id.sys_value><![CDATA["Simplicité(R)" <no-reply@simplicite.fr>]]></dsp_param_id.sys_value>
 		<dsp_param_id.sys_desc><![CDATA[Default email sender]]></dsp_param_id.sys_desc>
+		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dsp_disp_id.dis_code>default</dsp_disp_id.dis_code>
+		<dsp_param_id.sys_code>VERSION</dsp_param_id.sys_code>
+		<dsp_value><![CDATA[[VERSION:BytelTED]]]></dsp_value>
+		<dsp_param_id.sys_value><![CDATA[1.0.0]]></dsp_param_id.sys_value>
+		<dsp_param_id.sys_desc><![CDATA[Application version (HTML syntax can be used).]]></dsp_param_id.sys_desc>
 		<row_module_id.mdl_name>BytelTED</row_module_id.mdl_name>
 	</data>
 	<data>
